@@ -13,9 +13,30 @@
 <body>
   <body>
     <h1>LISTA DE ITEMS</h1>
-    <button id="sortTableButton">Sort Table</button>
-    <input type="text" id="searchBar" placeholder="Search...">
-    <table id="myTable">
+    <div class="contenedorBotones">
+      <button id="buttonItems" class="cybr-btn"><span  >Items</span>
+        <span aria-hidden>_</span>
+        <span aria-hidden class="cybr-btn__glitch">Items_</span>
+        <span aria-hidden class="cybr-btn__tag">R25</span>
+      </button>
+      <button id="weaponsButton" class="cybr-btn">
+        Armas<span aria-hidden>_</span>
+        <span aria-hidden class="cybr-btn__glitch">Armas_</span>
+        <span aria-hidden class="cybr-btn__tag">R25</span>
+      </button>
+      <button class="cybr-btn"><span  >Items Mágicos</span>
+        <span aria-hidden>_</span>
+        <span aria-hidden class="cybr-btn__glitch">Items Mágicos_</span>
+        <span aria-hidden class="cybr-btn__tag">R25</span>
+      </button>
+      
+      
+      
+    </div>
+    
+   
+    <input type="text" id="searchBar" placeholder="Buscar Item">
+    <table hidden id="myTable">
       <thead>
         <tr>
           <th>Nombre</th>
@@ -27,7 +48,22 @@
         </tr>
       </thead>
       <tbody>
-        <!-- Data will be inserted here dynamically using JavaScript -->
+        
+      </tbody>
+    </table>
+    <table hidden id="weaponsTable">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Tipo</th>
+          <th>Dificultad</th>
+          <th>Daño</th>
+          <th>HP</th>
+          <th>Bonificación C/C</th>
+        </tr>
+      </thead>
+      <tbody>
+        
       </tbody>
     </table>
     
