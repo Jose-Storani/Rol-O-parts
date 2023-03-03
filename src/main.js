@@ -3,11 +3,18 @@
 
 import {cyberPunkItems, steamPunkItems, armasBasicas,itemsMagicos,itemsOnlyKundums,efectosMagicos,} from "./Javascript/dataItems.js";
 
+let allData = cyberPunkItems.concat(steamPunkItems,armasBasicas,itemsMagicos)
 
-let data = [...cyberPunkItems];
-data.push(...steamPunkItems,...itemsMagicos);
-data.sort((a, b) => a.nombre.localeCompare(b.nombre));
+let cpSpItems = [...cyberPunkItems];
+cpSpItems.push(...steamPunkItems);
+cpSpItems.sort((a, b) => a.nombre.localeCompare(b.nombre));
 armasBasicas.sort((a, b) => a.nombre.localeCompare(b.nombre));
+itemsMagicos.sort((a, b) => a.nombre.localeCompare(b.nombre));
+
+console.log(allData)
+
+
+
 
 
 
@@ -49,6 +56,8 @@ armasBasicas.sort((a, b) => a.nombre.localeCompare(b.nombre));
   const itemsTable = table.querySelector('tbody');
   const weaponsTable = document.getElementById("weaponsTable");
   const weaponsTableBody = weaponsTable.querySelector("tbody")
+  const magicItemsTable = document.getElementById("magicItemsTable");
+  const magicItemsTableBody = magicItemsTable.querySelector("tbody");
   
   // Function to populate the table with data
   function populateTable(data,table) {
@@ -85,15 +94,16 @@ armasBasicas.sort((a, b) => a.nombre.localeCompare(b.nombre));
   }
   
   // Initial population of table
-  populateTable(data,itemsTable);
-  populateTable(armasBasicas,weaponsTableBody)
+  populateTable(cpSpItems ,itemsTable);
+  populateTable(armasBasicas,weaponsTableBody);
+  populateTable(itemsMagicos,magicItemsTableBody)
   
   // Get search bar element
   const searchBar = document.querySelector('#searchBar');
   
   // Function to filter data based on search query
   function filterData(searchQuery) {
-    const filteredData = armasBasicas.filter(item => {
+    const filteredData =  allData.filter(item => {
       const nombre = item.nombre.toLowerCase();      
       return nombre.includes(searchQuery) 
     });
@@ -104,7 +114,7 @@ armasBasicas.sort((a, b) => a.nombre.localeCompare(b.nombre));
   function handleSearch() {
     const searchQuery = searchBar.value.toLowerCase();
     const filteredData = filterData(searchQuery);
-    populateTable(filteredData,weaponsTableBody);
+    populateTable(filteredData,itemsTable);
     
   }
   
@@ -113,7 +123,7 @@ armasBasicas.sort((a, b) => a.nombre.localeCompare(b.nombre));
 
 
 
-
+//funcion que muestra la tabla o la oculta
 let showItemsTable = (tabla)=> {
   
   if(tabla.hasAttribute("hidden")){
@@ -125,6 +135,7 @@ let showItemsTable = (tabla)=> {
 
 }
 
+//botones de las tablas 
 let itemsButton = document.getElementById("buttonItems");
 itemsButton.addEventListener("click",()=>{
   showItemsTable(table)
@@ -133,4 +144,9 @@ itemsButton.addEventListener("click",()=>{
 let weaponsButton = document.getElementById("weaponsButton");
 weaponsButton.addEventListener("click", ()=> {
   showItemsTable(weaponsTable)
+})
+
+let magicItemsButton = document.getElementById("magicItemsButton");
+magicItemsButton.addEventListener("click",()=>{
+  showItemsTable(magicItemsTable)
 })

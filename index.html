@@ -13,6 +13,7 @@
 <body>
   <body>
     <h1>LISTA DE ITEMS</h1>
+    <button class="btn-shop"><a href="./src/pages/shop.html">Shop</a></button>
     <div class="contenedorBotones">
       <button id="buttonItems" class="cybr-btn"><span  >Items</span>
         <span aria-hidden>_</span>
@@ -24,7 +25,7 @@
         <span aria-hidden class="cybr-btn__glitch">Armas_</span>
         <span aria-hidden class="cybr-btn__tag">R25</span>
       </button>
-      <button class="cybr-btn"><span  >Items Mágicos</span>
+      <button id="magicItemsButton" class="cybr-btn"><span  >Mágicos</span>
         <span aria-hidden>_</span>
         <span aria-hidden class="cybr-btn__glitch">Items Mágicos_</span>
         <span aria-hidden class="cybr-btn__tag">R25</span>
@@ -33,9 +34,10 @@
       
       
     </div>
+    <input type="text" id="searchBar" placeholder="Buscar Item">
     
    
-    <input type="text" id="searchBar" placeholder="Buscar Item">
+    
     <table hidden id="myTable">
       <thead>
         <tr>
@@ -67,6 +69,20 @@
       </tbody>
     </table>
     
+    <table hidden id="magicItemsTable">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Tipo</th>
+          <th>Descripcion</th>
+          <th>Efecto</th>
+          <th>Rareza</th>
+          <th>Costo</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+      </tbody>
     <script type="module" src="./src/main.js"></script>
     
     
