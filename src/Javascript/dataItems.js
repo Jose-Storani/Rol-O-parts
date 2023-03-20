@@ -1170,7 +1170,7 @@ export const armasBasicas = [{
   descripcion: "Dificultad: 5",
   efecto: "Daño: +9 ",
   rareza: "HP: 60 ",
-  costo: "Bonificacion C.C: -3 ",
+  costo: "-3 ",
   precio:500
 
 }, {
@@ -1179,7 +1179,7 @@ export const armasBasicas = [{
   descripcion: "Dificultad: 8",
   efecto: "Daño: +7",
   rareza: "HP: 65",
-  costo: "Bonificacion C.C:-1 ",
+  costo: "-1 ",
   precio:300
 
 },
@@ -1189,7 +1189,7 @@ export const armasBasicas = [{
   descripcion: "Dificultad: 7 ",
   efecto: "Daño: +8 ",
   rareza: "HP: 65 ",
-  costo: "Bonificacion C.C: -2",
+  costo: " -2",
   precio:900
 
 },
@@ -1199,7 +1199,7 @@ export const armasBasicas = [{
   descripcion: "Dificultad: 6",
   efecto: "Daño: +9",
   rareza: "HP: 70",
-  costo: "Bonificacion C.C: -1",
+  costo: " -1",
   precio:900
 
 },
@@ -1209,7 +1209,7 @@ export const armasBasicas = [{
   descripcion: "Dificultad: 9",
   efecto: "Daño: +11",
   rareza: "HP: 70",
-  costo: "Bonificacion C.C: -4",
+  costo: " -4",
   precio:1200
 
 },
@@ -1219,7 +1219,7 @@ export const armasBasicas = [{
   descripcion: "Dificultad: 9",
   efecto: "Daño: +9",
   rareza: "HP: 65",
-  costo: "Bonificacion C.C: -5",
+  costo: " -5",
   precio:1300
 
 },
@@ -1229,7 +1229,7 @@ export const armasBasicas = [{
   descripcion: "Dificultad: 8",
   efecto: "Daño: +12",
   rareza: "HP: 70",
-  costo: "Bonificacion C.C: -4",
+  costo: " -4",
   precio:2000
 
 },
@@ -1239,7 +1239,7 @@ export const armasBasicas = [{
   descripcion: "Dificultad: 10",
   efecto: "Daño: +13",
   rareza: "HP: 75",
-  costo: "Bonificacion C.C: -3",
+  costo: " -3",
   precio:2300
 
 },
@@ -1249,7 +1249,7 @@ export const armasBasicas = [{
   descripcion: "Dificultad: 11",
   efecto: "Daño: +14",
   rareza: "HP: 80",
-  costo: "Bonificacion C.C: -5",
+  costo: " -5",
   precio:2200
 
 },
@@ -1259,7 +1259,7 @@ export const armasBasicas = [{
   descripcion: "Dificultad: 10",
   efecto: "Daño: +12",
   rareza: "HP: 80",
-  costo: "Bonificacion C.C: -4",
+  costo: " -4",
   precio:3000
 
 },
@@ -1269,7 +1269,7 @@ export const armasBasicas = [{
   descripcion: "Dificultad: 10",
   efecto: "Daño: +13",
   rareza: "HP: 85",
-  costo: "Bonificacion C.C: -5",
+  costo: " -5",
   precio:3700
 
 },
@@ -1279,7 +1279,7 @@ export const armasBasicas = [{
   descripcion: "Dificultad: 12",
   efecto: "Daño: 15",
   rareza: "HP: 90",
-  costo: "Bonificacion C.C:-4 ",
+  costo: "-4 ",
   precio:3900
 
 },
@@ -1289,7 +1289,7 @@ export const armasBasicas = [{
   descripcion: "Dificultad:11 ",
   efecto: "Daño: +14",
   rareza: "HP: 75",
-  costo: "Bonificacion C.C:-5 ",
+  costo: "-5 ",
   precio:4000
 
 },
@@ -1299,7 +1299,7 @@ export const armasBasicas = [{
   descripcion: "Dificultad: 12",
   efecto: "Daño: 16",
   rareza: "HP:75 ",
-  costo: "Bonificacion C.C:-4 ",
+  costo: "-4 ",
   precio:4500
 
 },
@@ -1309,7 +1309,7 @@ export const armasBasicas = [{
   descripcion: "Dificultad:13 ",
   efecto: "Daño: 15",
   rareza: "HP: 80",
-  costo: "Bonificacion C.C: -6",
+  costo: " -6",
   precio:6000
 
 },
@@ -1319,7 +1319,7 @@ export const armasBasicas = [{
   descripcion: "Dificultad: 11",
   efecto: "Daño: +14",
   rareza: "HP: 70",
-  costo: "Bonificacion C.C: -4",
+  costo: " -4",
   precio:5000
 },
 {
@@ -1328,7 +1328,7 @@ export const armasBasicas = [{
   descripcion: "Dificultad: 11",
   efecto: "Daño: +17",
   rareza: "HP: 75",
-  costo: "Bonificacion C.C: -4",
+  costo: " -4",
   precio:5500
 
 },
@@ -1338,7 +1338,7 @@ export const armasBasicas = [{
   descripcion: "Dificultad:12 ",
   efecto: "Daño: 25 + 2D6",
   rareza: "HP: 70",
-  costo: "Bonificacion C.C: -2 Distancia",
+  costo: " -2 Distancia",
   precio:2500
 
 },
@@ -1348,7 +1348,7 @@ export const armasBasicas = [{
   descripcion: "Dificultad:12 ",
   efecto: "Daño: 25 + 3D6",
   rareza: "HP: 65",
-  costo: "Bonificacion C.C: -4 Distancia",
+  costo: " -4 Distancia",
   precio:3500
 
 },
@@ -1358,7 +1358,7 @@ export const armasBasicas = [{
   descripcion: "Dificultad: 10",
   efecto: "Daño: 25 + 2D6",
   rareza: "HP: 70",
-  costo: "Bonificacion C.C: -5 Distancia",
+  costo: " -5 Distancia",
   precio:4500
 
 }
@@ -1982,181 +1982,191 @@ export const itemsOnlyKundums = [
   }
 ];
 
-// export const efectosMagicos = [{
-//   nombre: "Daño Elemental",
-//   efecto: "1MP - X flecha, +5pt daño",
-//   precio:15000
-// },
-// {
-//   nombre: "Fuego",
-//   efecto: "Suerte si gana 1d6 daño x turno",
-//   precio:
-// },
-// {
-//   nombre: "Electrico",
-//   efecto: "Arma CC +4",
-//   precio:
-// },
-// {
-//   nombre: "Tierra",
-//   efecto: "Ataca furtivo(bajo tierra)",
-//   precio:
-// },
-// {
-//   nombre: "Viento",
-//   efecto: "DES +2",
-//   precio:
-// },
-// {
-//   nombre: "Agua",
-//   efecto: "Rival DES -1",
-//   precio:
-// },
-// {
-//   nombre: "Hielo",
-//   efecto: "Congela localización: el rival tira RES AMB -30, el restante es el negativo. c/TC la tirada rival tiene +5",
-//   precio:
-// },
-// {
-//   nombre: "No elemental",
-//   efecto: "LANZA una ráfaga extra. Daño (VOLx1.5) en D6",
-//   precio:
-// },
-// {
-//   nombre: "50% elegir el lugar del daño",
-//   efecto: "",
-//   precio:
-// },
-// {
-//   nombre: "C/5Mp sube 1 vez mas el daño base",
-//   efecto: "la dificultad sube en un 50%",
-//   precio:
-// },
-// {
-//   nombre: "Roba habilidad opart x 1D10 TC",
-//   efecto: "Robar vs Res Mental. Si tiene + de 1 o-part se tira al azar. Solo una opart a la vez",
-//   precio:
-// },
-// {
-//   nombre: "Recupera 10% daño en Hp",
-//   efecto: "C/1mp ataca a un enemigo*",
-//   precio:
-// },
-// {
-//   nombre: "Roba 10% daño en mp",
-//   efecto: "",
-//   precio:
-// },
-// {
-//   nombre: "El daño que saca no se puede curar",
-//   efecto: "Hasta la proxima luz de luna",
-//   precio:
-// },
-// {
-//   nombre: "Envenena 1D6 x turno acumulable",
-//   efecto: "ciencias 20pts curar un estado. Cada TC de curación quita veneno de una sola locación",
-//   precio:
-// },
-// {
-//   nombre: "C/5pjs q mate sube +1daño",
-//   efecto: "Acumulable x usuario",
-//   precio:
-// },
-// {
-//   nombre: "Rival tiene menos de 100xp que usuario 10% de matar",
-//   efecto: "Permite robar al mismo tiempo ",
-//   precio:
-// },
-// {
-//   nombre: "tira Robar vs Alerta, si es exitoso el usuario pierde 1 MP, sino no",
-//   efecto: "",
-//   precio:
-// },
-// {
-//   nombre: "Ataca con sigilo y despues normal",
-//   efecto: "1 mp",
-//   precio:
-// },
-// {
-//   nombre: "1Mp regenera 4HP",
-//   efecto: "en el usuario",
-//   precio:
-// },
-// {
-//   nombre: "Si golpeo el turno pasado ",
-//   efecto: "los daños fisicos hacen 50% -",
-//   precio:
-// },
-// {
-//   nombre: "+1D4 lvls en una opart ",
-//   efecto: "Anula oparts alrededor",
-//   precio:
-// },
-// {
-//   nombre: "anula oparts del mismo nivel que la máxima de este usuario. Para lograrlo lanza Perc+magia vs Vol+Afinidad (rival). Gasta 5mp, pero se tira una sola vez por combate",
-//   efecto: "",
-//   precio:
-// },
-// {
-//   nombre: "C/enemigo que golpea da 1XP",
-//   efecto: "1vez x pj cada dia",
-//   precio:
-// },
-// {
-//   nombre: "El 10% de daño se agrega a voluntad",
-//   efecto: "",
-//   precio:
-// },
-// {
-//   nombre: "Ventaja",
-//   efecto: "Tira 2D20 para atacar con esta arma, elige el resultado que prefiera",
-//   precio:
-// },
-// {
-//   nombre: "Baja en 1D3 la afin de una opart ",
-//   efecto: "El D3 se tira una sola vez. La o-part puede cambiarse con la restricción de 24hs",
-//   precio:
-// },
+export const efectosMagicos = [{
+  nombre: "Daño Elemental",
+  efecto: "1MP - X flecha, +5pt daño",
+  precio:15000
+},
+{
+  nombre: "Fuego",
+  efecto: "Suerte si gana 1d6 daño x turno",
+  precio:15000
+},
+{
+  nombre: "Electrico",
+  efecto: "Arma CC +4",
+  precio:15000
+},
+{
+  nombre: "Tierra",
+  efecto: "Ataca furtivo(bajo tierra)",
+  precio:15000
+},
+{
+  nombre: "Viento",
+  efecto: "DES +2",
+  precio:15000
+},
+{
+  nombre: "Agua",
+  efecto: "Rival DES -1",
+  precio:15000
+},
+{
+  nombre: "Hielo",
+  efecto: "Congela localización: el rival tira RES AMB -30, el restante es el negativo. c/TC la tirada rival tiene +5",
+  precio:15000
+},
+{
+  nombre: "No elemental",
+  efecto: "LANZA una ráfaga extra. Daño (VOLx1.5) en D6",
+  precio:15000
+},
+{
+  nombre: "50% elegir el lugar del daño",
+  efecto: "",
+  precio:12500
+},
+{
+  nombre: "C/5Mp sube 1 vez mas el daño base",
+  efecto: "la dificultad sube en un 50%",
+  precio:13750
+},
+{
+  nombre: "Roba habilidad opart x 1D10 TC",
+  efecto: "Robar vs Res Mental. Si tiene + de 1 o-part se tira al azar. Solo una opart a la vez",
+  precio:12500
+},
+{
+  nombre: "Recupera 10% daño en Hp",
+  efecto: "C/1mp ataca a un enemigo*",
+  precio:12500
+},
+{
+  nombre: "Roba 10% daño en mp",
+  efecto: "",
+  precio:13750
+},
+{
+  nombre: "El daño que saca no se puede curar",
+  efecto: "Hasta la proxima luz de luna",
+  precio:12500
+},
+{
+  nombre: "Envenena 1D6 x turno acumulable",
+  efecto: "ciencias 20pts curar un estado. Cada TC de curación quita veneno de una sola locación",
+  precio:10625
+},
+{
+  nombre: "C/5pjs q mate sube +1daño",
+  efecto: "Acumulable x usuario",
+  precio:15000
+},
+{
+  nombre: "Rival tiene menos de 100xp que usuario 10% de matar",
+  efecto: "Permite robar al mismo tiempo ",
+  precio:12500
+},
+{
+  nombre: "tira Robar vs Alerta, si es exitoso el usuario pierde 1 MP, sino no",
+  efecto: "",
+  precio:10625
+},
+{
+  nombre: "Ataca con sigilo y despues normal",
+  efecto: "1 mp",
+  precio:10625
+},
+{
+  nombre: "1Mp regenera 4HP",
+  efecto: "en el usuario",
+  precio:10625
+},
+{
+  nombre: "Si golpeo el turno pasado ",
+  efecto: "los daños fisicos hacen 50% -",
+  precio:11250
+},
+{
+  nombre: "+1D4 lvls en una opart ",
+  efecto: "",
+  precio:13750
+},
+{
+  nombre: "anula oparts alrededor",
+  efecto: "anula oparts del mismo nivel que la máxima de este usuario. Para lograrlo lanza Perc+magia vs Vol+Afinidad (rival). Gasta 5mp, pero se tira una sola vez por combate",
+  precio:12500
+},
+{
+  nombre: "C/enemigo que golpea da 1XP",
+  efecto: "1vez x pj cada dia",
+  precio:11250
+},
+{
+  nombre: "El 10% de daño se agrega a voluntad",
+  efecto: "",
+  precio:11250
+},
+{
+  nombre: "Ventaja",
+  efecto: "Tira 2D20 para atacar con esta arma, elige el resultado que prefiera",
+  precio:12500
+},
+{
+  nombre: "Baja en 1D3 la afin de una opart ",
+  efecto: "El D3 se tira una sola vez. La o-part puede cambiarse con la restricción de 24hs",
+  precio:16250
+},
 
-// ]
+]
 
 export const vehiculos = [{
   nombre:"Neon Skate",
+  precio: randomNumber(15000,23000)
   
 },
 {
   nombre:"Neon Skate",
+  precio: randomNumber(15000,23000)
   
 },
 {
   nombre:"Neon Skate",
+  precio: randomNumber(15000,23000)
   
 },
 {
   nombre:"Neon Skate",
+  precio: randomNumber(15000,23000)
   
 },
 {
   nombre:"Bípedo",
+  precio: randomNumber(17000,24000)
   
 },
 {
   nombre:"Bípedo",
+  precio: randomNumber(17000,24000)
   
 },
 {
   nombre:"Bípedo",
+  precio: randomNumber(17000,24000)
   
 },
 {
   nombre:"Cuadrúpedo Ligero",
+  precio:randomNumber(20000,33000)
   
 },
 {
-  nombre:"Cuadrúpedo Ligero"
+  nombre:"Cuadrúpedo Ligero",
+  precio:randomNumber(20000,33000)
 },
 {
-  nombre:"Pesados y Especiales"
+  nombre:"Pesados y Especiales",
+  precio:randomNumber(25000,55000)
 }]
 
 export const kundums = [{
@@ -2232,7 +2242,7 @@ export const baseProducts = [{
 }];
 
 
-function randomNumber(min,max){
+export function randomNumber(min,max){
   const randomNumber = Math.floor(Math.random()*(max - min + 1)) + min;
   return randomNumber
 }

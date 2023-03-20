@@ -1,7 +1,7 @@
 // Sample data
 // import { itemManager } from "./itemManager.js";
 
-import {cyberPunkItems, steamPunkItems, armasBasicas,itemsMagicos,itemsOnlyKundums,efectosMagicos,} from "./Javascript/dataItems.js";
+import {cyberPunkItems, steamPunkItems, armasBasicas,itemsMagicos,itemsOnlyKundums} from "./Javascript/dataItems.js";
 
 let allData = cyberPunkItems.concat(steamPunkItems,armasBasicas,itemsMagicos)
 

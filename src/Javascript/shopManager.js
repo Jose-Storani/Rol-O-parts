@@ -7,6 +7,8 @@ import {
     baseProducts,    
     vehiculos,
     kundums,
+    randomNumber,
+    efectosMagicos
 } from "./dataItems.js";
 
 let shopTable = document.getElementById("shopTable");
@@ -14,7 +16,10 @@ let shopTableBody = shopTable.querySelector("tbody");
 let percentButton = document.getElementById("percent");
 const shopBaseProducts = document.getElementById("shopTableBaseProducts")
 const shopBaseProductsBody = shopBaseProducts.querySelector("tbody");
-console.log(shopBaseProductsBody)
+
+const weaponsTable = document.getElementById("weaponsTable");
+const weaponsTableBody = weaponsTable.querySelector("tbody")
+
 
 //devuelve un item random del array de items correspondiente
 function randomItem(itemsArray) {
@@ -92,28 +97,137 @@ function selectItemType() {
     return item;
 }
 
-function generateArray() {
+function selectWeapon(){
+    const randomNumberType = Math.floor(Math.random() * 26) + 1;
+    let item;
+    switch (randomNumberType) {
+        case 1:
+        case 2:
+        case 23:
+        case 24:
+        case 25:
+        case 26:
+            item = {
+                nombre: "NADA",
+            };
+            break;
+        case 3:
+            item = armasBasicas[0];
+            break;
+        case 4:
+            item = armasBasicas[1];
+            break;
+        case 5:
+            item = armasBasicas[2];
+            break;
+        case 6:
+            item = armasBasicas[3];
+            break;
+        case 7:
+            item = armasBasicas [4];
+        case 8 : 
+        item = armasBasicas[5];
+        break;
+
+        case 9 :
+            item = armasBasicas[6];
+            break;
+
+        case 10: 
+        item = armasBasicas[7];
+        break;
+        
+        case 11:
+            item= armasBasicas[8];
+            break;
+        
+        case 12:
+            item = armasBasicas[9];
+            break;
+        
+        case 13:
+            item = armasBasicas[10];
+            break;
+        
+        case 14:
+            item= armasBasicas[11];
+            break;
+
+        case 15:
+            item = armasBasicas[12];
+            break;
+        
+        case 16:
+            item = armasBasicas[13];
+            break;
+        
+        case 17:
+            item = armasBasicas[14];
+            break;
+        
+        case 18:
+            item = armasBasicas[15];
+            break;
+        
+        case 19:
+            item = armasBasicas[16];
+            break;
+        
+        case 20:
+            item = armasBasicas[17];
+            break;
+        
+        case 21:
+            item = armasBasicas[18];
+            break;
+        
+        case 22:
+            item = armasBasicas[19];
+            break;
+        default:
+            item = "ERROR";
+            break;
+    }
+
+    const isMagic = randomNumber(1,100);
+    if(isMagic <= 10 && item.nombre !== "NADA"){
+        item.efectoMagico = efectosMagicos[randomNumber(0,26)];
+        item.precio += item.efectoMagico.precio
+        return item
+    }
+    else{
+        return item;
+    }
+    
+}
+
+function generateArray(arrayLength, arrayTypeFunction) {
     let i = 0;
     let arrayItemsShop = [];
     //es 20 porque es la cantidad de items por shop
-    while (i < 20) {
+    while (i < arrayLength) {
         i++;
-        let itemSelected = selectItemType();
+        let itemSelected = arrayTypeFunction();
         arrayItemsShop.push(itemSelected);
     }
     return arrayItemsShop;
 }
 
+
 function percentButtonValue() {
     return 1 + percentButton.value / 100;
 }
 
-function populateShopTable(arrayItems) {
+function populateShopTable(arrayItems, arrayWeapons) {
     shopTableBody.innerHTML = "";
     shopBaseProductsBody.innerHTML= "";
+    weaponsTableBody.innerHTML = "";
 
     let arrayItemsCopy = JSON.parse(JSON.stringify(arrayItems));
     let baseProductsCopy = JSON.parse(JSON.stringify(baseProducts));
+    let weaponsCopy = JSON.parse(JSON.stringify(arrayWeapons));
+    console.log(weaponsCopy)
+
 
     arrayItemsCopy.forEach((item) => {
         if (item.nombre == "NADA") {
@@ -167,6 +281,54 @@ function populateShopTable(arrayItems) {
 
         shopBaseProductsBody.appendChild(row)
         
+    });
+
+
+
+    
+
+    weaponsCopy.forEach((item)=>{
+        if(item.nombre === "NADA"){
+            return;
+        }
+
+
+        item.precio = Math.round(item.precio * percentButtonValue()); 
+        
+        const row = document.createElement("tr")
+        
+        const nameCell = document.createElement("td");
+        const typeCell = document.createElement("td");
+        const dificultCell = document.createElement("td");
+        const damageCell = document.createElement("td");
+        const hpCell = document.createElement("td");
+        const bonCell = document.createElement("td");
+        const magicEffectCell = document.createElement("td");
+        const magicEffectDescriptionCell = document.createElement("td");
+        const priceCell = document.createElement("td");
+
+        nameCell.textContent = item.nombre;
+        typeCell.textContent = item.tipo;
+        dificultCell.textContent = item.descripcion;
+        damageCell.textContent = item.efecto;
+        hpCell.textContent = item.rareza;
+        bonCell.textContent = item.costo;
+        magicEffectCell.textContent = item.efectoMagico?.nombre ?? "";
+        magicEffectDescriptionCell.textContent = item.efectoMagico?.efecto ?? "";
+        priceCell.textContent = item.precio;
+
+        row.appendChild(nameCell);
+        row.appendChild(typeCell);
+        row.appendChild(dificultCell);
+        row.appendChild(damageCell);
+        row.appendChild(hpCell);
+        row.appendChild(bonCell);
+        row.appendChild(magicEffectCell);
+        row.appendChild(magicEffectDescriptionCell);
+        row.appendChild(priceCell);
+        weaponsTableBody.appendChild(row);
+
+
     })
 
 
@@ -174,45 +336,8 @@ function populateShopTable(arrayItems) {
 
 const generateShopButton = document.getElementById("shopButton");
 generateShopButton.addEventListener("click", () => {
-    populateShopTable(generateArray());
+    populateShopTable(generateArray(20,selectItemType),generateArray(5,selectWeapon));;
 });
 
 
-// const itemsArray = [{
-//     nombre: "Revolver Samael (2 tiros por turno",
 
-//     efecto: "4 balas x cartucho, 3D8 + 35pt daño c/u",
-//     precio:10000
-//   },
-//   {
-//     nombre: "The unnatural selector (atk area)",
-
-//     efecto: "5D6 sin resistencia en 4x4m",
-//     precio:11250
-//   },
-//   {
-//     nombre: "Dado del sueño (area)",
-
-//     efecto: "30 vs autoc. Para dormir",
-//     precio:8750
-//   },
-//   {
-//     nombre: "Jetpack (Tecno 35 para usar)",
-
-//     efecto: "Atlet 40 para usar con una mano",
-//     precio:11875
-//   },
-//   {
-//     nombre: "Automail (miembro al azar)",
-
-//     efecto: "Fue de 1 a 5D, Res de 30 a 70pt",
-//     precio:10000
-//   }];
-
-// let tempArray = JSON.parse(JSON.stringify(itemsArray));
-
-// tempArray.forEach((e)=>{
-//     e.precio *= 2
-// })
-// console.log(itemsArray)
-// console.log(tempArray)
