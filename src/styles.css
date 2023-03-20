@@ -259,5 +259,9 @@ tr:hover {
     font-family: Tomorrow, sans-serif;
     font-size: 1rem;
     text-transform: uppercase;
-    margin-bottom: 20px;
+    
+  }
+
+  #shopTable{
+    margin-top: 30px;
   }

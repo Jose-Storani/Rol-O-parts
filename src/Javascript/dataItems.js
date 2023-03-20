@@ -1,20 +1,14 @@
 const cyberItem = "Cyber Item",
-  vehiculo = "Vehículo",
-  kundum = "Kundum",
   steamPunk = "Steampunk",
   magico = "Mágico";
 
+  function mageBloodPercent() {
+    const randomBloodPercent = Math.floor(Math.random() * (39) + 2)
+    return `Sangre de mago ${randomBloodPercent}`
+}
 
 
 export const cyberPunkItems = [
-  {
-    nombre: "",
-    tipo: null,
-    descripcion: "",
-    efecto: "",
-    rareza: "",
-    costo: 0
-  },
 
   {
     nombre: "Analizador GeoAmbiental ",
@@ -22,7 +16,8 @@ export const cyberPunkItems = [
     descripcion: "Dron de reconocimiento",
     efecto: "+2 supervivencia, +3 Orientarse. Cargado tiene 1 semana de autonomía. HP 60",
     rareza: "B",
-    costo: 3200
+    costo: 3200,
+    precio:8000
   },
   {
     nombre: "Armor sónica Abdómen",
@@ -30,7 +25,8 @@ export const cyberPunkItems = [
     descripcion: "",
     efecto: "(reduce todo daño no mágico en 20%) y después aplica -6 de daño.",
     rareza: "B",
-    costo: 2800
+    costo: 2800,
+    precio:7000
   },
   {
     nombre: "Armor sónica Brazo Derecho",
@@ -38,7 +34,8 @@ export const cyberPunkItems = [
     descripcion: "",
     efecto: "(reduce todo daño no mágico en 20%) y después aplica -6 de daño.",
     rareza: "B",
-    costo: 2800
+    costo: 2800,
+    precio:7000
   },
   {
     nombre: "Armor sónica Brazo Izquierdo",
@@ -46,7 +43,8 @@ export const cyberPunkItems = [
     descripcion: "",
     efecto: "(reduce todo daño no mágico en 20%) y después aplica -6 de daño.",
     rareza: "B",
-    costo: 2800
+    costo: 2800,
+    precio:7000
   },
   {
     nombre: "Armor sónica casco",
@@ -54,7 +52,8 @@ export const cyberPunkItems = [
     descripcion: "",
     efecto: "(reduce todo daño no mágico en 20%) y después aplica -6 de daño.",
     rareza: "S",
-    costo: 4667
+    costo: 4667,
+    precio:7000
   },
   {
     nombre: "Armor sónica Pecho",
@@ -62,7 +61,8 @@ export const cyberPunkItems = [
     descripcion: "",
     efecto: "(reduce todo daño no mágico en 20%) y después aplica -6 de daño.",
     rareza: "A",
-    costo: 3500
+    costo: 3500,
+    precio:7000
   },
   {
     nombre: "Armor sónica Pierna Izquierda",
@@ -70,7 +70,8 @@ export const cyberPunkItems = [
     descripcion: "",
     efecto: "(reduce todo daño no mágico en 20%) y después aplica -6 de daño.",
     rareza: "B",
-    costo: 2800
+    costo: 2800,
+    precio:7000
   },
   {
     nombre: "Armor sónica Pierna Derecha",
@@ -78,7 +79,8 @@ export const cyberPunkItems = [
     descripcion: "",
     efecto: "(reduce todo daño no mágico en 20%) y después aplica -6 de daño.",
     rareza: "B",
-    costo: 2800
+    costo: 2800,
+    precio:7000
   },
 
   {
@@ -87,7 +89,8 @@ export const cyberPunkItems = [
     descripcion: "Pistola Ligera 6 balas",
     efecto: "Daño 25+2D4 / 2 ros TC (dificultad 15 x ro) / +3 Arma DIstancia",
     rareza: "D",
-    costo: 857
+    costo: 857,
+    precio:3000
   },
   {
     nombre: "Avenger",
@@ -95,7 +98,8 @@ export const cyberPunkItems = [
     descripcion: "Pistola Media 8 balas",
     efecto: "Daño 30+2D4 / 2 ros TC (dificultad 12 x ro) / +2 Arma DIstancia",
     rareza: "c",
-    costo: 2286
+    costo: 2286,
+    precio:8000
   },
 
   {
@@ -104,7 +108,8 @@ export const cyberPunkItems = [
     descripcion: "Perfume",
     efecto: "Durante 1TL +6 seducir",
     rareza: "C",
-    costo: 200
+    costo: 200,
+    precio:700
   },
   {
     nombre: "Bomba de humo",
@@ -112,7 +117,8 @@ export const cyberPunkItems = [
     descripcion: "",
     efecto: "Permite el sigilo en un radio de 5M.",
     rareza: "D",
-    costo: 571
+    costo: 571,
+    precio:2000
   },
   {
     nombre: "Bomba de luz",
@@ -120,7 +126,8 @@ export const cyberPunkItems = [
     descripcion: "",
     efecto: "Los cercanos que la vean sufren una penalización en movimientos de -1D10 (cada uno ra el suyo) por 1D3 tc.",
     rareza: "D",
-    costo: 1286
+    costo: 1286,
+    precio:4500
   },
   {
     nombre: "Chadran Jungle Reaper",
@@ -128,7 +135,8 @@ export const cyberPunkItems = [
     descripcion: "Ametralladora Pesada (30 balas)",
     efecto: "Daño 38+2D10 / 3 ros TC (dificultad 25 x ro) / -3 Arma Distancia /Ráfaga 1D20",
     rareza: "S",
-    costo: 15333
+    costo: 15333,
+    precio:23000
   },
 
   {
@@ -137,7 +145,8 @@ export const cyberPunkItems = [
     descripcion: "Genera Descargas",
     efecto: "",
     rareza: "",
-    costo: 0,
+    costo: 3600,
+    precio:9000
   },
   {
     nombre: "Combat Magnun",
@@ -145,7 +154,8 @@ export const cyberPunkItems = [
     descripcion: "Pistola Media (6 balas)",
     efecto: "",
     rareza: "",
-    costo: 0,
+    costo: 4400,
+    precio:11000
   },
   {
     nombre: "Cyber Arco",
@@ -153,7 +163,17 @@ export const cyberPunkItems = [
     descripcion: "",
     efecto: "",
     rareza: "",
-    costo: 0,
+    costo: 6500,
+    precio:13000
+  },
+  {
+    nombre: "Cinturon AntiG",
+    tipo: cyberItem,
+    descripcion: "",
+    efecto: "(+2 DES) x 1D8+1 TC. Para volver usarse debe tener contacto con el sol 1TL.",
+    rareza: "B",
+    costo: 3500,
+    precio:13000
   },
   {
     nombre: "Chip arma inteligente",
@@ -161,7 +181,8 @@ export const cyberPunkItems = [
     descripcion: "Ayuda a la precisión",
     efecto: "Arma Dist +3, requiere una cirugía leve",
     rareza: "C",
-    costo: 2286
+    costo: 2286,
+    precio:8000
   },
   {
     nombre: "Columna de Neon",
@@ -169,7 +190,8 @@ export const cyberPunkItems = [
     descripcion: "",
     efecto: "Posee 4 slots para diferentes Alquimias y con un pensamiento el usuario se aplica las que desee en medio turno. Son muy llamativas y con un golpe las rompen. Requiere cirugía mayor",
     rareza: "A",
-    costo: 7500
+    costo: 7500,
+    precio:15000
   },
   {
     nombre: "Constitution Deluge",
@@ -177,7 +199,8 @@ export const cyberPunkItems = [
     descripcion: "Lanza Granadas (8 granadas)",
     efecto: "Daño 45+3D6 / 1 ro TC (dificultad 40 daño %100, 35 %75 daño, 30 50% daño, 25 25% daño) / -3 Arma Distancia",
     rareza: "S",
-    costo: 19333
+    costo: 19333,
+    precio:29000
   },
   {
     nombre: "Cyber Esqueleto",
@@ -185,7 +208,8 @@ export const cyberPunkItems = [
     descripcion: "1D8 para ver la parte, si 8 elige",
     efecto: "Armor +10 la parte y suma +1D8 FUE. Si de un golpe le hacen 40p revienta. Destrezas -1",
     rareza: "S",
-    costo: 8667
+    costo: 8667,
+    precio:13000
   },
   {
     nombre: "Cyber látigo",
@@ -193,7 +217,8 @@ export const cyberPunkItems = [
     descripcion: "Látigo disparado de muñeca",
     efecto: "Dispara a Lanzar +5, FUE 35p",
     rareza: "B",
-    costo: 3600
+    costo: 3600,
+    precio:9000
   },
   {
     nombre: "Cyber Mano",
@@ -201,7 +226,8 @@ export const cyberPunkItems = [
     descripcion: "Mano muluso",
     efecto: "FUE +3D, ene lintena, 5 ros de 30+2D6, 5 dedos bomba (30+6D6), aerosol paralizante (-10 mov x 1D3 tc), Ganzúa (+3 abrir cerradura)",
     rareza: "B",
-    costo: 8800
+    costo: 8800,
+    precio:22000
   },
   {
     nombre: "Cyber Terminal",
@@ -209,7 +235,8 @@ export const cyberPunkItems = [
     descripcion: "Medio de comunicación",
     efecto: "Conecta con otras cyberterminales en un radio de 100-150 km. Cargada ene 1tl de autonomía",
     rareza: "C",
-    costo: 3143
+    costo: 3143,
+    precio:11000
   },
   {
     nombre: "CyberCam EX3",
@@ -217,7 +244,8 @@ export const cyberPunkItems = [
     descripcion: "Analiza en vivo al enemigo",
     efecto: "Cada turno que hayas pasado combaendo contra un rival te da a dar un bonificador de (+1D3) en atacar o esquivar. Max +6. HP=50",
     rareza: "S",
-    costo: 14667
+    costo: 14667,
+    precio:22000
   },
   {
     nombre: "CyberConmocion",
@@ -225,7 +253,8 @@ export const cyberPunkItems = [
     descripcion: "",
     efecto: "Al recibir 20 o más puntos de daño suelta una descarga eléctrica que causa 5d8 a todos en un radio de 3x3 metros, solo una vez por día. Requiere cirugía mayor",
     rareza: "A",
-    costo: 8000
+    costo: 8000,
+    precio:16000
   },
   {
     nombre: "Cyberimplante Brazo Izq",
@@ -233,7 +262,8 @@ export const cyberPunkItems = [
     descripcion: "",
     efecto: "80hp, ra suerte vs DM. C/3+ ene una mejora al azar. Consultar: mejoras automail abajo",
     rareza: "A",
-    costo: 7500
+    costo: 7500,
+    precio:15000
   },
   {
     nombre: "Cyberimplante Brazo Izq",
@@ -241,7 +271,8 @@ export const cyberPunkItems = [
     descripcion: "",
     efecto: "80hp, ra suerte vs DM. C/3+ ene una mejora al azar. Consultar: mejoras automail abajo",
     rareza: "A",
-    costo: 7500
+    costo: 7500,
+    precio:15000
   },
   {
     nombre: "Cyberimplante Brazo Der",
@@ -249,7 +280,8 @@ export const cyberPunkItems = [
     descripcion: "",
     efecto: "80hp, ra suerte vs DM. C/3+ ene una mejora al azar. Consultar: mejoras automail abajo",
     rareza: "A",
-    costo: 7500
+    costo: 7500,
+    precio:15000
   },
   {
     nombre: "Cyberimplante Pierna Izq",
@@ -257,7 +289,8 @@ export const cyberPunkItems = [
     descripcion: "",
     efecto: "80hp, ra suerte vs DM. C/3+ ene una mejora al azar. Consultar: mejoras automail abajo",
     rareza: "A",
-    costo: 7500
+    costo: 7500,
+    precio:15000
   },
   {
     nombre: "Cyberimplante Pierna Izq",
@@ -265,7 +298,8 @@ export const cyberPunkItems = [
     descripcion: "",
     efecto: "80hp, ra suerte vs DM. C/3+ ene una mejora al azar. Consultar: mejoras automail abajo",
     rareza: "A",
-    costo: 7500
+    costo: 7500,
+    precio:15000
   },
   {
     nombre: "Cybrer Escudo Retractil",
@@ -273,7 +307,8 @@ export const cyberPunkItems = [
     descripcion: "",
     efecto: "Ocupa T1, se despliega desde un brazo, da +3 al bloqueo y ene 80Hp, que se pueden ir regenerando con Reparar 30 10hp con 50 de chatarra.",
     rareza: "A",
-    costo: 6000
+    costo: 6000,
+    precio:12000
   },
   {
     nombre: "Czar Skorpion",
@@ -281,7 +316,8 @@ export const cyberPunkItems = [
     descripcion: "Ametralladora ligera (25 balas)",
     efecto: "Daño 25+2D4 / 4 ros TC (dificultad 15 x ro) / +3 Arma DIstancia/ Ráfaga 1D20+6",
     rareza: "A",
-    costo: 9500
+    costo: 9500,
+    precio:19000
   },
   {
     nombre: "Daga de Neon",
@@ -289,7 +325,8 @@ export const cyberPunkItems = [
     descripcion: "",
     efecto: "(el filo vibra, al cortar traspasa cualquier armaduras ignorando su bonif, a las 3 veces que golpea en la misma parte derrite el armor) 7 // +7 // 200hp // Bonif +2 //",
     rareza: "B",
-    costo: 1800
+    costo: 1800,
+    precio:4500
   },
   {
     nombre: "Dai Lung Cybermag",
@@ -297,7 +334,8 @@ export const cyberPunkItems = [
     descripcion: "Pistola Ligera (9 balas)",
     efecto: "Daño 30+2D4 / 2 ros TC (dificultad 18 x ro) / +2 Arma Distancia",
     rareza: "C",
-    costo: 1714
+    costo: 1714,
+    precio:6000
   },
   {
     nombre: "Detector de radiación/enfermedades",
@@ -305,7 +343,8 @@ export const cyberPunkItems = [
     descripcion: "",
     efecto: "Disposivo autónomo solar (conque 1TL le de sol funciona todo el día) que avisa los porcentajes de enfermedades o radiaciones cercanos, configurable para que suene alertando o no haga ningún ruido para mayor discreción. Pequeña pantalla usualmente en el antebrazo. ",
     rareza: "C",
-    costo: 2000
+    costo: 2000,
+    precio:7000
   },
   {
     nombre: "Droide Médico",
@@ -313,7 +352,8 @@ export const cyberPunkItems = [
     descripcion: "",
     efecto: "Medicina +8 o puede cargarse hasta con 30% de boquín y curar con una rada de 20. (es más lento que una persona, 3TC una curación rápida).",
     rareza: "A",
-    costo: 6000
+    costo: 6000,
+    precio:12000
   },
   {
     nombre: "Drug Dealer",
@@ -321,7 +361,8 @@ export const cyberPunkItems = [
     descripcion: "Implante de uso único",
     efecto: "Cuando caes inconciente por HP te cura 4D6, +3 Fortaleza, +2 Destreza por 1D4+2 tc. Luego perdés 1 Espíritu",
     rareza: "A",
-    costo: 3000
+    costo: 3000,
+    precio:6000
   },
   {
     nombre: "Espada de Neon",
@@ -329,7 +370,8 @@ export const cyberPunkItems = [
     descripcion: "",
     efecto: "(el filo vibra, al cortar traspasa cualquier armaduras ignorando su bonif, a las 3 veces que golpea en la misma parte derrite el armor) 12 // +11 // 70hp // Bonif +4 //",
     rareza: "A",
-    costo: 4750
+    costo: 4750,
+    precio:9500
   },
   {
     nombre: "FlashHand",
@@ -337,7 +379,8 @@ export const cyberPunkItems = [
     descripcion: "Luz aturdidora bajo muñeca",
     efecto: "Los cercanos que la vean sufren una penalización en movimientos de -1D10 (cada uno ra el suyo) por 1D3 tc",
     rareza: "D",
-    costo: 1429
+    costo: 1429,
+    precio:5000
   },
   {
     nombre: "Founder 90001",
@@ -345,14 +388,16 @@ export const cyberPunkItems = [
     descripcion: "Rastreador tecnológico",
     efecto: "Encuentra CUALQUIER item CP en 10m a la redonda (si por alguna razón mágica está oculto no). 2 turnos quieto",
     rareza: "D",
-    costo: 2857
+    costo: 2857,
+    precio:10000
   }, {
     nombre: "Granada",
     tipo: cyberItem,
     descripcion: "",
     efecto: "Explosión 40+3D6",
     rareza: "B",
-    costo: 1800
+    costo: 1800,
+    precio:4500
   },
   {
     nombre: "Granada de pulso",
@@ -360,15 +405,17 @@ export const cyberPunkItems = [
     descripcion: "",
     efecto: "Toda la tecnología CP deja de funcionar en un radio de 5M, durante 1D4+1 TC",
     rareza: "A",
-    costo: 3250
+    costo: 3250,
+    precio:6500
   },
   {
     nombre: "Guadaña de Neon",
     tipo: cyberItem,
     descripcion: "",
-    efecto: "(el filo vibra, al cortar traspasa cualquier armaduras ignorando su bonif, a las 3 veces que golpea en la misma parte derrite el armor) 12 // +14 // 400hp // Bonif +2 //",
-    rareza: "A",
-    costo: 5500
+    efecto: "(el filo vibra, al cortar traspasa cualquier armadura no mágica ignorando su bonif, a las 3 veces que golpea en la misma parte derrite el armor) 10 // +11 // 330hp // Bonif +4 //",
+    rareza: "S",
+    costo: 9333,
+    precio:14000
   },
   {
     nombre: "Hacha de Neon",
@@ -376,7 +423,8 @@ export const cyberPunkItems = [
     descripcion: "",
     efecto: "(el filo vibra, al cortar traspasa cualquier armaduras ignorando su bonif, a las 3 veces que golpea en la misma parte derrite el armor) 12 // +14 // 400hp // Bonif +2 /",
     rareza: "A",
-    costo: 5500
+    costo: 5500,
+    precio:11000
   },
   {
     nombre: "Hammer FIST",
@@ -384,7 +432,8 @@ export const cyberPunkItems = [
     descripcion: "Módulo de ataque propulsado",
     efecto: "Carga 1tc, el próximo golpe a mano limpia tendrá +4 Pelea +8D6 daño. HP=40",
     rareza: "C",
-    costo: 4000
+    costo: 4000,
+    precio:14000
   },
   {
     nombre: "HeadGear",
@@ -392,7 +441,8 @@ export const cyberPunkItems = [
     descripcion: "Casco para hackear ",
     efecto: "Tiradas tecnológicas +4, +8pt RES",
     rareza: "B",
-    costo: 3600
+    costo: 3600,
+    precio:9000
   },
   {
     nombre: "Heavy SMG",
@@ -400,15 +450,16 @@ export const cyberPunkItems = [
     descripcion: "Ametralladora Media (30 balas)",
     efecto: "Daño 30+1D10 / 4 ros TC (dificultad 20 x ro) / -1 Arma Distancia /Ráfaga 2D20",
     rareza: "A",
-    costo: 10500
-  },
+    costo: 10500,
+    precio: 21000},
   {
     nombre: "Holo Academycs",
     tipo: cyberItem,
     descripcion: "Sistema holográfico aprendizaje ",
     efecto: "Se puede usar en party. +3 Aprendizaje, +3 Enseñanza. Cargado ene 1tl de autonomía",
     rareza: "C",
-    costo: 2857
+    costo: 2857,
+    precio:10000
   },
   {
     nombre: "Holo Clothes",
@@ -416,7 +467,8 @@ export const cyberPunkItems = [
     descripcion: "Ocupa 1 equipamiento magic",
     efecto: "Los cambios de temperatura te afectan 50% menos. Tenés 40% de que Alquimias y enferemedades no te afecten.",
     rareza: "B",
-    costo: 5600
+    costo: 5600,
+    precio:14000
   },
   {
     nombre: "Holo Proyector",
@@ -424,7 +476,8 @@ export const cyberPunkItems = [
     descripcion: "Crea una pantalla holográfica",
     efecto: "Crea una copia holográfica tuya para evitar un ataque sorpresivo.",
     rareza: "C",
-    costo: 571
+    costo: 571,
+    precio:2000
   },
   {
     nombre: "Hydro Subsidium",
@@ -432,7 +485,8 @@ export const cyberPunkItems = [
     descripcion: "Traje de buzo avanzado",
     efecto: "Puede soportar profundidades alsimas, fríos bajos y hasta un TL sin salir a la superficie",
     rareza: "B",
-    costo: 6000
+    costo: 6000,
+    precio:15000
   },
   {
     nombre: "Infrareloj Datatel",
@@ -440,15 +494,17 @@ export const cyberPunkItems = [
     descripcion: "Localiza cosas",
     efecto: "Siempre que res por LOOT hacé 2 radas y quedate con tu favorita",
     rareza: "A",
-    costo: 3500
+    costo: 3500,
+    precio:7000
   },
   {
     nombre: "Kan-Eda 4cm Rail Cannon",
     tipo: cyberItem,
     descripcion: "Rifle Láser (1 Tiro)",
-    efecto: "Daño 50+2D10 / rayo constante permite re rar con -6 (+2xlvl) para golpear otra parte u otro PJ / -4 Arma distancia / 1 TC recargar disparos",
+    efecto: "Daño 50+2D10 / rayo constante permite re lanzar con -6 (+2xlvl) para golpear otra parte u otro PJ / -4 Arma distancia / 1 TC recargar disparos",
     rareza: "S",
-    costo: 22000
+    costo: 22000,
+    precio:33000
   },
   {
     nombre: "Lanza de Neon",
@@ -456,7 +512,8 @@ export const cyberPunkItems = [
     descripcion: "",
     efecto: "13 // +15 // 80hp // Bonif +4 // al cortar traspasa cualquier armadura no mágica ",
     rareza: "S",
-    costo: 8000
+    costo: 8000,
+    precio:12000
   },
   {
     nombre: "Latom Shin-RA",
@@ -464,7 +521,8 @@ export const cyberPunkItems = [
     descripcion: "Lanzallamas (1D4+3 TC)",
     efecto: "Daño 20+2D6 / Este daño va a 1D6 locaciones al mismo empo/ 50% de prolongarse otro TC, -20% por c/TC que pase /-3 Arma Dist.",
     rareza: "A",
-    costo: 10000
+    costo: 10000,
+    precio:20000
   },
   {
     nombre: "Lector de magia agresiva (lentes)",
@@ -472,7 +530,8 @@ export const cyberPunkItems = [
     descripcion: "",
     efecto: "Le permite al usuario ver los efectos invisibles y tratar de esquivarlos",
     rareza: "S",
-    costo: 7333
+    costo: 7333,
+    precio:11000
   },
   {
     nombre: "Log Pose",
@@ -480,7 +539,8 @@ export const cyberPunkItems = [
     descripcion: "",
     efecto: "Set de 2 Brújulas digitales con diseño de Radar, cada una marca hacia dónde está la otra. Disposivo autónomo solar (conque 1TL le de sol funciona todo el día)",
     rareza: "A",
-    costo: 3500
+    costo: 3500,
+    precio:7000
   },
   {
     nombre: "MedicGear Abs+Pecho",
@@ -488,7 +548,8 @@ export const cyberPunkItems = [
     descripcion: "Armadura médica",
     efecto: "Armor +7, Médico +1. Si de un golpe le hacen 35p revienta",
     rareza: "S",
-    costo: 6667
+    costo: 6667,
+    precio:10000
   },
   {
     nombre: "MedicGear Brazos",
@@ -496,7 +557,8 @@ export const cyberPunkItems = [
     descripcion: "Armadura médica",
     efecto: "Armor +7, Médico +1. Si de un golpe le hacen 35p revienta",
     rareza: "A",
-    costo: 5000
+    costo: 5000,
+    precio:10000
   },
   {
     nombre: "MedicGear Casco",
@@ -504,7 +566,8 @@ export const cyberPunkItems = [
     descripcion: "Armadura médica",
     efecto: "Armor +7, Médico +1. Si de un golpe le hacen 35p revienta",
     rareza: "A",
-    costo: 3000
+    costo: 3000,
+    precio:6000
   },
   {
     nombre: "MedicGear Piernas",
@@ -512,7 +575,8 @@ export const cyberPunkItems = [
     descripcion: "Armadura médica",
     efecto: "Armor +7, Médico +1. Si de un golpe le hacen 35p revienta",
     rareza: "A",
-    costo: 5000
+    costo: 5000,
+    precio:10000
   },
   {
     nombre: "Meta Warhammer",
@@ -520,7 +584,8 @@ export const cyberPunkItems = [
     descripcion: "Shotgun (8 balas)",
     efecto: "Distancia Daño 35+1D12/ cerca Daño 35+2D12 / 2 ros TC (dif a distancia 35 x ro, cerca 15) / -5 Arma Distancia",
     rareza: "S",
-    costo: 16667
+    costo: 16667,
+    precio:25000
   },
   {
     nombre: "MiKoto Casco Omega",
@@ -528,7 +593,8 @@ export const cyberPunkItems = [
     descripcion: "",
     efecto: "Casco al que se le pueden comprar chips de mejoras en cualquier mercader, da +6 a RES si se rompe de golpes los upgrades se salvan, tirada de Tecnología 20. UPGRADES: $4000. NightVision $5000 // Purificador de aire $6000 // Percibir +3 $8000 // Rastrear +4 $8000 // Senr magia +3 $8000 //Reconocimiento de Bountys por rostro $5000 // Análisis facial Empáco +3 $8000 // Filmación úlmos 15 min $6000 // Apertura sombrilla para evitar lluvias $3000 // Tasación +4 $7000 // Nulifica el efecto de las bombas de humo o luz $5000 ",
     rareza: "S",
-    costo: 16667
+    costo: 5333,
+    precio:8000
   },
   {
     nombre: "MiKoto Chip",
@@ -536,7 +602,8 @@ export const cyberPunkItems = [
     descripcion: "Detector de mentiras",
     efecto: "Empático +4",
     rareza: "A",
-    costo: 4000
+    costo: 4000,
+    precio:8000
   },
   {
     nombre: "MiKoto Controlador",
@@ -544,14 +611,16 @@ export const cyberPunkItems = [
     descripcion: "",
     efecto: "Brazalete autónomo solar (conque 1TL le de sol funciona todo el día) que controla las pulsaciones y ritmos cardíacos. Cuando el usario se altera le dá una pequeña descarga de 1Hp en cada parte del cuerpo y le permite rar autocontrol+8 para calmarse",
     rareza: "C",
-    costo: 1714
+    costo: 1714,
+    precio:6000
   }, {
     nombre: "MiKoto HoloLens",
     tipo: cyberItem,
     descripcion: "",
     efecto: "Permite marcar a un objevo y da Descubrir +5 para encontrarlo si se esconde o mueve. Nulifica el efecto de las bombas de humo o luz.",
     rareza: "A",
-    costo: 4150
+    costo: 4150,
+    precio:8300
   },
   {
     nombre: "MiKoto Ignis",
@@ -559,30 +628,34 @@ export const cyberPunkItems = [
     descripcion: "",
     efecto: "Ideal para viajeros, un droide que una vez al día cocina o te ayuda a cocinar con +8 en el tipo de comida que desees, es a energía solar",
     rareza: "B",
-    costo: 3600
+    costo: 3600,
+    precio:9000
   },
   {
     nombre: "MiKoto Opcs",
     tipo: cyberItem,
     descripcion: "Ojos ampliados",
-    efecto: "Esquivar +1, Descubrir +3, Conducir +2, Lanzar +2, Magia -6. Requiere una operación media (un solo ojo no ene efectos, todo da +1 por LVL usuario)",
+    efecto: "Esquivar +1, Descubrir +3, Conducir +2, Lanzar +2, Magia -6. Requiere una operación media (un solo ojo no tiene efectos, todo da +1 por LVL usuario)",
     rareza: "A",
-    costo: 7500
+    costo: 7500,
+    precio:15000
   }, {
     nombre: "MiKoto Scanner",
     tipo: cyberItem,
     descripcion: "Lector de ondas mágicas",
     efecto: "Magia +2, sabe qué % consume cada O-Part tras verla, intenta explicar lo que hace un O-Part en una palabra (3 usos diarios)",
     rareza: "A",
-    costo: 6500
+    costo: 6500,
+    precio:13000
   },
   {
     nombre: "MiKoto shield",
     tipo: cyberItem,
     descripcion: "",
-    efecto: "Ocupa T5, da +7 al bloqueo, -2 Destreza, y ene 110Hp, que se pueden ir regenerando con Reparar 30 10hp con 70 de chatarra. Los daños por disparos de 34 o menos simplemente no pasan. Se puede Lanzar con Mínimo de FUE 8 y suma +10 de daño lanzar, como ene giroscopio y estabilizador puede volver o quedarse de pie para servir como cobertura en un roteo. Como uso único se puede activar su autodetonación de 0 a 15 segundos explotando en un daño de área de 40+3D8.",
+    efecto: "Ocupa T5, da +7 al bloqueo, -2 Destreza, y tiene 110Hp, que se pueden ir regenerando con Reparar 30 10hp con 70 de chatarra. Los daños por disparos de 34 o menos simplemente no pasan. Se puede Lanzar con Mínimo de FUE 8 y suma +10 de daño lanzar, como tiene giroscopio y estabilizador puede volver o quedarse de pie para servir como cobertura en un roteo. Como uso único se puede activar su autodetonación de 0 a 15 segundos explotando en un daño de área de 40+3D8.",
     rareza: "S",
-    costo: 10667
+    costo: 10667,
+    precio:16000
   },
   {
     nombre: "Militech M97",
@@ -590,7 +663,8 @@ export const cyberPunkItems = [
     descripcion: "Camuflaje óptico fullbody",
     efecto: "Mientras estés inmóvil +12 Sigilo, en movimiento VENTAJA",
     rareza: "S",
-    costo: 12667
+    costo: 12667,
+    precio:19000
   },
   {
     nombre: "Mochila electromagnéca",
@@ -598,7 +672,8 @@ export const cyberPunkItems = [
     descripcion: "",
     efecto: "Si llevás esto no podés tener mochilas con slots. Cuando detecta disparos de armas te da +8 en Esquivar. Dura 1TL por día.",
     rareza: "A",
-    costo: 8500
+    costo: 8500,
+    precio:17000
   },
   {
     nombre: "MonoVision",
@@ -606,15 +681,17 @@ export const cyberPunkItems = [
     descripcion: "Implante óptico 180°",
     efecto: "Ignora aturdimientos visuales, +4 descubrir, +4 alerta, +3 pilotar, -4 magia, +1 inmidar. Cirugía menor",
     rareza: "C",
-    costo: 3714
+    costo: 3714,
+    precio:13000
   },
   {
     nombre: "Muñequera afilada",
     tipo: cyberItem,
     descripcion: "",
     efecto: "Daño +3D6 solo con PELEA",
-    rareza: "",
-    costo: 0
+    rareza: "C",
+    costo: 1714,
+    precio: 6000
   },
   {
     nombre: "Muñequera Mortal",
@@ -622,7 +699,8 @@ export const cyberPunkItems = [
     descripcion: "Vibra (3 veces x día)",
     efecto: "Daño +3D6 solo con PELEA / se puede gastar una carga para sumar +2D10 daño",
     rareza: "A",
-    costo: 6000
+    costo: 6000,
+    precio:12000
   },
   {
     nombre: "Mustang Arms Mark II",
@@ -630,7 +708,8 @@ export const cyberPunkItems = [
     descripcion: "Pistola Pesada (13 balas)",
     efecto: "Daño 30+2D6 / 3 ros TC (dificultad 11 x ro) / -2 Arma Distancia",
     rareza: "A",
-    costo: 6500
+    costo: 6500,
+    precio:13000
   },
   {
     nombre: "Nano Feromonas x8",
@@ -638,7 +717,8 @@ export const cyberPunkItems = [
     descripcion: "",
     efecto: "C/píldora +3 Seductor. En el acto sexual todas tus radas aumentan 70%. Autocontrol 20 para no generar adicción, a las 3 fallas gana el defecto de adicto",
     rareza: "C",
-    costo: 857
+    costo: 857,
+    precio:3000
   },
   {
     nombre: "Nano Gear",
@@ -646,7 +726,8 @@ export const cyberPunkItems = [
     descripcion: "Armadura fullbody",
     efecto: "Armor+6 en c/parte. Un golpe de 30p lo revienta. C/parte Puede volverse transparente",
     rareza: "S",
-    costo: 13333
+    costo: 13333,
+    precio:20000
   },
   {
     nombre: "Neuro C4",
@@ -654,7 +735,8 @@ export const cyberPunkItems = [
     descripcion: "Explosivos a distancia",
     efecto: "Plantá C4 y dinamitá con el pensamiento. Daño 40+6D6",
     rareza: "B",
-    costo: 4400
+    costo: 4400,
+    precio:11000
   },
   {
     nombre: "Nova 757 Cityhunter",
@@ -662,7 +744,8 @@ export const cyberPunkItems = [
     descripcion: "Pistola Pesada (6 balas)",
     efecto: "Daño 30+3D6 / 2 ros TC (dificultad 17 x ro) / -2 Arma Distancia",
     rareza: "B",
-    costo: 4400
+    costo: 4400,
+    precio:11000
   },
   {
     nombre: "Nutrisuplemento",
@@ -670,15 +753,17 @@ export const cyberPunkItems = [
     descripcion: "Alimento por 24hs",
     efecto: "Te manene perfectamente hidratado, con grasas y calores adicionales. Tirar Res Veneno, si pifia te desmayás por 1TL",
     rareza: "D",
-    costo: 429
+    costo: 429,
+    precio:1500
   },
   {
     nombre: "Ojo Remoto",
     tipo: cyberItem,
     descripcion: "Ojo espía",
-    efecto: "Tiene Sigilo 40. Recibís la transmisión AV a una CyberTerminal. Si tenés Remote Gear puede desplazarse con Atlesmo 20",
+    efecto: "Tiene Sigilo 40. Recibís la transmisión AV a una CyberTerminal. Si tenés Remote Gear puede desplazarse con Atletismo 20",
     rareza: "C",
-    costo: 571
+    costo: 571,
+    precio:2000
   },
   {
     nombre: "Panel solar",
@@ -686,23 +771,26 @@ export const cyberPunkItems = [
     descripcion: "Ideal para vehículos",
     efecto: "1 panel da energía a un vehículo pequeño (o dos items chicos), 2 paneles a un tanque de criogenia. Al primer golpe se rompe",
     rareza: "D",
-    costo: 1143
+    costo: 1143,
+    precio:4000
   },
   {
-    nombre: "Pies Magnécos",
+    nombre: "Pies Magnéticos",
     tipo: cyberItem,
     descripcion: "",
     efecto: "Permite caminar o correr sobre superficies metálicas, mediante una cirugía leve",
     rareza: "D",
-    costo: 857
+    costo: 857,
+    precio:3000
   },
   {
     nombre: "Pies Rollers",
     tipo: cyberItem,
     descripcion: "",
-    efecto: "Atlesmo +3",
+    efecto: "Atletismo +3",
     rareza: "D",
-    costo: 2000
+    costo: 2000,
+    precio:7000
   },
   {
     nombre: "Pistolera",
@@ -710,7 +798,8 @@ export const cyberPunkItems = [
     descripcion: "Espacio extra para 1 pistola",
     efecto: "Se puede ubicar en cualquier extremidad, mediante una cirugía leve",
     rareza: "D",
-    costo: 1143
+    costo: 1143,
+    precio:4000
   },
   {
     nombre: "Procesador de Lenguaje",
@@ -718,14 +807,16 @@ export const cyberPunkItems = [
     descripcion: "Interpreta por vos",
     efecto: "Linguisca x2 (antes de rar el dado y sin aplicar espíritu o voluntad)",
     rareza: "D",
-    costo: 1714
+    costo: 1714,
+    precio:6000
   }, {
     nombre: "Remington Gyro-Rifle",
     tipo: cyberItem,
     descripcion: "Sniper (6 balas",
     efecto: "Daño 35+2D6 / 2 tiros TC (dificultad 30 x tiro) / -4 Arma Dist (moviendose) / +4 Arma Distancia (quieto) / anula negativos x dist hasta -10",
     rareza: "S",
-    costo: 20000
+    costo: 20000,
+    precio:30000
   },
   {
     nombre: "Remote Gear",
@@ -733,7 +824,8 @@ export const cyberPunkItems = [
     descripcion: "Maneja cyber items a distancia",
     efecto: "Controla cosas hackeadas. Una vez por mes +1 Espíritu si usás 1TL para jugar",
     rareza: "D",
-    costo: 5143
+    costo: 5143,
+    precio:18000
   },
   {
     nombre: "Ruger MKII",
@@ -741,14 +833,16 @@ export const cyberPunkItems = [
     descripcion: "Pistola Ligera (13 balas)",
     efecto: "Daño 25+2D6 / 2 ros TC (dificultad 15 x tiro) / +1 Arma DIstancia",
     rareza: "D",
-    costo: 1143
+    costo: 1143,
+    precio:4000
   }, {
     nombre: "S&W Handcannon",
     tipo: cyberItem,
     descripcion: "Pistola Pesada (2 balas)",
     efecto: "Daño 40+2D10 / 2 ros TC (dificultad 25 x ro) / -4 Arma Distancia",
     rareza: "A",
-    costo: 7500
+    costo: 7500,
+    precio:15000
   },
   {
     nombre: "Sonic Shield",
@@ -756,7 +850,8 @@ export const cyberPunkItems = [
     descripcion: "",
     efecto: "Ocupa T3, da +5 al bloqueo, -1 Destreza, reduce el daño no mágico en un 20% y ene 90Hp, que se pueden ir regenerando con Reparar 30 10hp con 90 de chatarra.",
     rareza: "A",
-    costo: 7500
+    costo: 7500,
+    precio:14000
   },
   {
     nombre: "Stolbovoy",
@@ -764,7 +859,8 @@ export const cyberPunkItems = [
     descripcion: "Pistola Media (14 balas)",
     efecto: "Daño 30+2D6 / 3 ros TC (dificultad 14 x ro) / -2 Arma Distancia",
     rareza: "B",
-    costo: 3600
+    costo: 3600,
+    precio:9000
   },
   {
     nombre: "Tech Raven",
@@ -772,7 +868,8 @@ export const cyberPunkItems = [
     descripcion: "Soporte para Técnicos",
     efecto: "Reparar/Construír +5, Tecnológico +3, Pilotar +2, Conducir +2",
     rareza: "B",
-    costo: 5600
+    costo: 5600,
+    precio:14000
   },
   {
     nombre: "Techno Katana 2B",
@@ -780,7 +877,8 @@ export const cyberPunkItems = [
     descripcion: "Katana Autónoma",
     efecto: "Como Katana normal 11 // +14 / Si tenés CHIP ARMA INTELIGENTE: Ataca por su cuenta emulando LANZAR y puede ocupar T0 en inventario ",
     rareza: "S",
-    costo: 16000
+    costo: 16000,
+    precio:24000
   },
   {
     nombre: "Tecnoestabilizador",
@@ -788,7 +886,8 @@ export const cyberPunkItems = [
     descripcion: "Inyector y estabilizador",
     efecto: "Cura 5HP al instante, Médico +3. $500 recarga",
     rareza: "B",
-    costo: 3200
+    costo: 3200,
+    precio:8000
   },
   {
     nombre: "TeknoBird",
@@ -796,7 +895,8 @@ export const cyberPunkItems = [
     descripcion: "",
     efecto: "Ocupan T2, permite desplazarse a gran altura y velocidad volando todo un TL, requiere 2TL solares para cargarse. Avanza el triple que si fuera 1TL en auto. Si se usan en combate dan -7 en DES, pero se puede ganar mucha altura o ulizar para escapar",
     rareza: "S",
-    costo: 5333
+    costo: 5333,
+    precio:8000
   },
   {
     nombre: "Torreta solar (1TL",
@@ -804,7 +904,8 @@ export const cyberPunkItems = [
     descripcion: "",
     efecto: "Viene sin arma, se le puede montar la que gustes. Tiene 80hp, sigilo 18pts , Arma distancia 25pts. Se le pueden cargar figuras aliadas para que no ataque.",
     rareza: "C",
-    costo: 2286
+    costo: 2286,
+    precio:8000
   },
   {
     nombre: "Trauma Abdomen",
@@ -812,7 +913,8 @@ export const cyberPunkItems = [
     descripcion: "",
     efecto: "-9 daño, +1 medicina, cada dos partes - 1 DES",
     rareza: "S",
-    costo: 5333
+    costo: 5333,
+    precio:8000
   },
   {
     nombre: "Trauma brazo der",
@@ -820,7 +922,8 @@ export const cyberPunkItems = [
     descripcion: "",
     efecto: "-9 daño, +1 medicina, cada dos partes - 1 DES",
     rareza: "S",
-    costo: 5333
+    costo: 5333,
+    precio:8000
   },
   {
     nombre: "Trauma brazo izq",
@@ -828,7 +931,8 @@ export const cyberPunkItems = [
     descripcion: "",
     efecto: "-9 daño, +1 medicina, cada dos partes - 1 DES",
     rareza: "S",
-    costo: 5333
+    costo: 5333,
+    precio:8000
   },
   {
     nombre: "Trauma casco",
@@ -836,7 +940,8 @@ export const cyberPunkItems = [
     descripcion: "",
     efecto: "-9 daño, +1 medicina, cada dos partes - 1 DES",
     rareza: "S",
-    costo: 5333
+    costo: 5333,
+    precio:8000
   },
   {
     nombre: "Trauma Pecho",
@@ -844,7 +949,8 @@ export const cyberPunkItems = [
     descripcion: "",
     efecto: "-9 daño, +1 medicina, cada dos partes - 1 DES",
     rareza: "S",
-    costo: 5333
+    costo: 5333,
+    precio:8000
   },
   {
     nombre: "Trauma pierna izq",
@@ -852,7 +958,8 @@ export const cyberPunkItems = [
     descripcion: "",
     efecto: "-9 daño, +1 medicina, cada dos partes - 1 DES",
     rareza: "S",
-    costo: 5333
+    costo: 5333,
+    precio:8000
   },
   {
     nombre: "Trauma pierna der",
@@ -860,7 +967,8 @@ export const cyberPunkItems = [
     descripcion: "",
     efecto: "-9 daño, +1 medicina, cada dos partes - 1 DES",
     rareza: "S",
-    costo: 5333
+    costo: 5333,
+    precio:8000
   },
   {
     nombre: "Tsunami Arms Ramjet",
@@ -868,15 +976,17 @@ export const cyberPunkItems = [
     descripcion: "Rifle de energía (1D4 disparos)",
     efecto: "Daño 40+1D12 / rayo constante permite re tirar con -6 (+2 x lvl) para golpear otra parte u otro PJ / +2 Arma distancia / 1 TC recargar disparos ",
     rareza: "S",
-    costo: 18000
+    costo: 18000,
+    precio:27000
   },
   {
     nombre: "Tubo de Criogenia",
     tipo: cyberItem,
     descripcion: "",
-    efecto: "Mientras esté conectado manene vivo algo dentro. Cargada ene 2tl de autonomía",
+    efecto: "Mientras esté conectado mantiene vivo algo dentro. Cargada tiene 2tl de autonomía",
     rareza: "S",
-    costo: 8000
+    costo: 8000,
+    precio:12000
   },
   {
     nombre: "Visor OpTech",
@@ -884,7 +994,8 @@ export const cyberPunkItems = [
     descripcion: "Binoculares",
     efecto: "Hasta 1500m. Infrarrojo",
     rareza: "D",
-    costo: 1714
+    costo: 1714,
+    precio:6000
   }
 
 ];
@@ -892,137 +1003,164 @@ export const cyberPunkItems = [
 export const steamPunkItems = [{
   nombre:"Armor Brazo Izquierdo",
   tipo: steamPunk,
-  efecto:"armor 3, a los 20 golpe se rompe"
+  efecto:"armor 3, a los 20 golpe se rompe",
+  precio:900
 },
 {
   nombre:"Armor Brazo Derecho",
   tipo: steamPunk,
-  efecto:"armor 3, a los 20 golpe se rompe"
+  efecto:"armor 3, a los 20 golpe se rompe",
+  precio:900
 },
 {
   nombre:"Armor Pierna Izquierda",
   tipo: steamPunk,
-  efecto:"armor 3, a los 20 golpe se rompe"
+  efecto:"armor 3, a los 20 golpe se rompe",
+  precio:1000
 },
 {
   nombre:"Armor Pierna Derecha",
   tipo: steamPunk,
-  efecto:"armor 3, a los 20 golpe se rompe"
+  efecto:"armor 3, a los 20 golpe se rompe",
+  precio:1000
 },
 {
   nombre:"Armor Pecho",
   tipo: steamPunk,
-  efecto:"-6 daño - resiste 3 golpes"
+  efecto:"-6 daño - resiste 3 golpes",
+  precio:1200
 },
 {
   nombre:"Armor Abdomen",
   tipo: steamPunk,
-  efecto:"-5 daño - resiste 5 golpes"
+  efecto:"-5 daño - resiste 5 golpes",
+  precio:1200
 },
 {
   nombre:"Armor Cabeza",
   tipo: steamPunk,
-  efecto:"-5 daño - resiste 5 golpes"
+  efecto:"-5 daño - resiste 5 golpes",
+  precio:1300
 },
 {
   nombre: "Brazalete duerme (uso único)",
   tipo: steamPunk,
-  efecto: "38pt autocontrol o se duerme"
+  efecto: "38pt autocontrol o se duerme",
+  precio:7500
 },
 {
   nombre: "Bobina electrica",
   tipo: steamPunk,
-  efecto: "pared electrica invisible 60daño"
+  efecto: "pared electrica invisible 60daño",
+  precio:8750
 },
 {
   nombre: "Pistola de onda (alcance corto)",
   tipo: steamPunk,
-  efecto: "10D6 daño, lanza al enemigo"
+  efecto: "10D6 daño, lanza al enemigo",
+  precio:6875
 },
 {
   nombre: "Mina (terrestre y sopapa a la ropa)",
   tipo: steamPunk,
-  efecto: "5D10 sin resistencia"
+  efecto: "5D10 sin resistencia",
+  precio:1875
 },
 {
   nombre: "Antares paralizante (usa pelea)",
   tipo: steamPunk,
-  efecto: "20 vs Res Amb. paraliza miembro. 3 usos totales. C/tc que pasa aumenta 5 la dificultad del veneno. Dura 1D10+3 turnos"
+  efecto: "20 vs Res Amb. paraliza miembro. 3 usos totales. C/tc que pasa aumenta 5 la dificultad del veneno. Dura 1D10+3 turnos",
+  precio:8750
 },
 {
   nombre: "Insecto espia",
   tipo: steamPunk,
-  efecto: "35 sigilo, graba audio"
+  efecto: "35 sigilo, graba audio",
+  precio:1250
 },
 {
   nombre: "Pistola de rayos anulador",
   tipo: steamPunk,
-  efecto: "Anula 1D10 turnos si pega"
+  efecto: "Anula 1D10 turnos si pega",
+  precio:15625
 },
 {
   nombre: "Potenciador a vapor",
   tipo: steamPunk,
-  efecto: "+3D fuerza (sin limites) +3PELEA"
+  efecto: "+3D fuerza (sin limites) +3PELEA",
+  precio:13750
 },
 {
   nombre: "Receptor auditivo (+1D percep)",
   tipo: steamPunk,
-  efecto: "Puede recibir señales de radio"
+  efecto: "Puede recibir señales de radio",
+  precio:7500
 },
 {
   nombre: "Corruptor de maquinaria",
   tipo: steamPunk,
-  efecto: "tecno vs tecno creador 3 veces"
+  efecto: "tecno vs tecno creador 3 veces",
+  precio:10000
 },
 {
   nombre: "Los conocimientos de Tim Baker",
   tipo: steamPunk,
-  efecto: "Si puede leer +3 en tecno y rep"
+  efecto: "Si puede leer +3 en tecno y rep",
+  precio:8125
 },
 {
   nombre: "Camara de fotos con 1 bombita",
   tipo: steamPunk,
-  efecto: "1D6 fotos restantes"
+  efecto: "1D6 fotos restantes",
+  precio:688
 },
 {
   nombre: "Insecto mecanico de Luddmer",
   tipo: steamPunk,
-  efecto: "Graba sonidos, sigilo 11D6"
+  efecto: "Graba sonidos, sigilo 11D6",
+  precio:2125
 },
 {
   nombre: "Caminante a vapor",
   tipo: steamPunk,
-  efecto: "+3 Destreza (s/limit)"
+  efecto: "+3 Destreza (s/limit)",
+  precio:13750
 },
 {
   nombre: "Revolver Samael (2 tiros por turno",
   tipo: steamPunk,
-  efecto: "4 balas x cartucho, 3D8 + 35pt daño c/u"
+  efecto: "4 balas x cartucho, 3D8 + 35pt daño c/u",
+  precio:10000
 },
 {
   nombre: "The unnatural selector (atk area)",
   tipo: steamPunk,
-  efecto: "5D6 sin resistencia en 4x4m"
+  efecto: "5D6 sin resistencia en 4x4m",
+  precio:11250
 },
 {
   nombre: "Dado del sueño (area)",
   tipo: steamPunk,
-  efecto: "30 vs autoc. Para dormir"
+  efecto: "30 vs autoc. Para dormir",
+  precio:8750
 },
 {
   nombre: "Jetpack (Tecno 35 para usar)",
   tipo: steamPunk,
-  efecto: "Atlet 40 para usar con una mano"
+  efecto: "Atlet 40 para usar con una mano",
+  precio:11875
 },
 {
   nombre: "Automail (miembro al azar)",
   tipo: steamPunk,
-  efecto: "Fue de 1 a 5D, Res de 30 a 70pt"
+  efecto: "Fue de 1 a 5D, Res de 30 a 70pt",
+  precio:10000
 },
 {
   nombre: "Cacharro",
   tipo: steamPunk,
-  efecto: "Piezas revendibles x 1D10 $50"
+  efecto: "Piezas revendibles x 1D10 $50",
+  
 },
 ];
 
@@ -1032,7 +1170,8 @@ export const armasBasicas = [{
   descripcion: "Dificultad: 5",
   efecto: "Daño: +9 ",
   rareza: "HP: 60 ",
-  costo: "Bonificacion C.C: -3 "
+  costo: "Bonificacion C.C: -3 ",
+  precio:500
 
 }, {
   nombre: "Daga Adiosrubia",
@@ -1040,7 +1179,8 @@ export const armasBasicas = [{
   descripcion: "Dificultad: 8",
   efecto: "Daño: +7",
   rareza: "HP: 65",
-  costo: "Bonificacion C.C:-1 "
+  costo: "Bonificacion C.C:-1 ",
+  precio:300
 
 },
 {
@@ -1049,7 +1189,8 @@ export const armasBasicas = [{
   descripcion: "Dificultad: 7 ",
   efecto: "Daño: +8 ",
   rareza: "HP: 65 ",
-  costo: "Bonificacion C.C: -2"
+  costo: "Bonificacion C.C: -2",
+  precio:900
 
 },
 {
@@ -1058,7 +1199,8 @@ export const armasBasicas = [{
   descripcion: "Dificultad: 6",
   efecto: "Daño: +9",
   rareza: "HP: 70",
-  costo: "Bonificacion C.C: -1"
+  costo: "Bonificacion C.C: -1",
+  precio:900
 
 },
 {
@@ -1067,7 +1209,8 @@ export const armasBasicas = [{
   descripcion: "Dificultad: 9",
   efecto: "Daño: +11",
   rareza: "HP: 70",
-  costo: "Bonificacion C.C: -4"
+  costo: "Bonificacion C.C: -4",
+  precio:1200
 
 },
 {
@@ -1076,7 +1219,8 @@ export const armasBasicas = [{
   descripcion: "Dificultad: 9",
   efecto: "Daño: +9",
   rareza: "HP: 65",
-  costo: "Bonificacion C.C: -5"
+  costo: "Bonificacion C.C: -5",
+  precio:1300
 
 },
 {
@@ -1085,7 +1229,8 @@ export const armasBasicas = [{
   descripcion: "Dificultad: 8",
   efecto: "Daño: +12",
   rareza: "HP: 70",
-  costo: "Bonificacion C.C: -4"
+  costo: "Bonificacion C.C: -4",
+  precio:2000
 
 },
 {
@@ -1094,7 +1239,8 @@ export const armasBasicas = [{
   descripcion: "Dificultad: 10",
   efecto: "Daño: +13",
   rareza: "HP: 75",
-  costo: "Bonificacion C.C: -3"
+  costo: "Bonificacion C.C: -3",
+  precio:2300
 
 },
 {
@@ -1103,7 +1249,8 @@ export const armasBasicas = [{
   descripcion: "Dificultad: 11",
   efecto: "Daño: +14",
   rareza: "HP: 80",
-  costo: "Bonificacion C.C: -5"
+  costo: "Bonificacion C.C: -5",
+  precio:2200
 
 },
 {
@@ -1112,7 +1259,8 @@ export const armasBasicas = [{
   descripcion: "Dificultad: 10",
   efecto: "Daño: +12",
   rareza: "HP: 80",
-  costo: "Bonificacion C.C: -4"
+  costo: "Bonificacion C.C: -4",
+  precio:3000
 
 },
 {
@@ -1121,7 +1269,8 @@ export const armasBasicas = [{
   descripcion: "Dificultad: 10",
   efecto: "Daño: +13",
   rareza: "HP: 85",
-  costo: "Bonificacion C.C: -5"
+  costo: "Bonificacion C.C: -5",
+  precio:3700
 
 },
 {
@@ -1130,7 +1279,8 @@ export const armasBasicas = [{
   descripcion: "Dificultad: 12",
   efecto: "Daño: 15",
   rareza: "HP: 90",
-  costo: "Bonificacion C.C:-4 "
+  costo: "Bonificacion C.C:-4 ",
+  precio:3900
 
 },
 {
@@ -1139,7 +1289,8 @@ export const armasBasicas = [{
   descripcion: "Dificultad:11 ",
   efecto: "Daño: +14",
   rareza: "HP: 75",
-  costo: "Bonificacion C.C:-5 "
+  costo: "Bonificacion C.C:-5 ",
+  precio:4000
 
 },
 {
@@ -1148,7 +1299,8 @@ export const armasBasicas = [{
   descripcion: "Dificultad: 12",
   efecto: "Daño: 16",
   rareza: "HP:75 ",
-  costo: "Bonificacion C.C:-4 "
+  costo: "Bonificacion C.C:-4 ",
+  precio:4500
 
 },
 {
@@ -1157,7 +1309,8 @@ export const armasBasicas = [{
   descripcion: "Dificultad:13 ",
   efecto: "Daño: 15",
   rareza: "HP: 80",
-  costo: "Bonificacion C.C: -6"
+  costo: "Bonificacion C.C: -6",
+  precio:6000
 
 },
 {
@@ -1166,8 +1319,8 @@ export const armasBasicas = [{
   descripcion: "Dificultad: 11",
   efecto: "Daño: +14",
   rareza: "HP: 70",
-  costo: "Bonificacion C.C: -4"
-
+  costo: "Bonificacion C.C: -4",
+  precio:5000
 },
 {
   nombre: "Guadaña Triple Filo",
@@ -1175,7 +1328,8 @@ export const armasBasicas = [{
   descripcion: "Dificultad: 11",
   efecto: "Daño: +17",
   rareza: "HP: 75",
-  costo: "Bonificacion C.C: -4"
+  costo: "Bonificacion C.C: -4",
+  precio:5500
 
 },
 {
@@ -1184,7 +1338,8 @@ export const armasBasicas = [{
   descripcion: "Dificultad:12 ",
   efecto: "Daño: 25 + 2D6",
   rareza: "HP: 70",
-  costo: "Bonificacion C.C: -2 Distancia"
+  costo: "Bonificacion C.C: -2 Distancia",
+  precio:2500
 
 },
 {
@@ -1193,7 +1348,8 @@ export const armasBasicas = [{
   descripcion: "Dificultad:12 ",
   efecto: "Daño: 25 + 3D6",
   rareza: "HP: 65",
-  costo: "Bonificacion C.C: -4 Distancia"
+  costo: "Bonificacion C.C: -4 Distancia",
+  precio:3500
 
 },
 {
@@ -1202,7 +1358,8 @@ export const armasBasicas = [{
   descripcion: "Dificultad: 10",
   efecto: "Daño: 25 + 2D6",
   rareza: "HP: 70",
-  costo: "Bonificacion C.C: -5 Distancia"
+  costo: "Bonificacion C.C: -5 Distancia",
+  precio:4500
 
 }
 ];
@@ -1211,465 +1368,542 @@ export const itemsMagicos = [{
   nombre: "Anillo",
   tipo: magico,
   descripcion: "-1pt gasto MP",
-  efecto: "Máximo descuento por turno 1mp C/5 Percibir +Magia (cada anillo max descuenta 1mp, esto es con varios)"
+  efecto: "Máximo descuento por turno 1mp C/5 Percibir +Magia (cada anillo max descuenta 1mp, esto es con varios)",
+  precio:12500
 },
 {
   nombre: "Anillo",
   tipo: magico,
   descripcion: "+1D6 Fuerza C/1MP",
-  efecto: "Máx aplicable 1D6 c/7 en Res mental"
+  efecto: "Máx aplicable 1D6 c/7 en Res mental",
+  precio:15000
 },
 {
   nombre: "Anillo",
   tipo: magico,
   descripcion: "+1D6 Resist C/1MP",
-  efecto: "Máx aplicable 1D6 c/7 en Res mental"
+  efecto: "Máx aplicable 1D6 c/7 en Res mental",
+  precio:1500
 },
 {
   nombre: "Anillo",
   tipo: magico,
   descripcion: "+ 1pt Suerte",
-  efecto: "Max 5"
+  efecto: "Max 5",
+  precio:11250
 },
 {
   nombre: "Anillo",
   tipo: magico,
   descripcion: "Anillo Mejora de Afinidad",
-  efecto: "C/1MP - 1 AFIN al costo de una opart por 1TL, Máx aplicable 1 c/7 en Res mental"
+  efecto: "C/1MP - 1 AFIN al costo de una opart por 1TL, Máx aplicable 1 c/7 en Res mental",
+  precio:11250
 },
 {
   nombre: "Anillo",
   tipo: magico,
   descripcion: "Teletransportador",
-  efecto: "5MP x C/PJ"
+  efecto: "5MP x C/PJ",
+  precio:16250
 },
 {
   nombre: "Anillo",
   tipo: magico,
   descripcion: "10% Reflejo",
-  efecto: "Max 150%"
+  efecto: "Max 150%",
+  precio:11250
 },
 {
   nombre: "Anillo",
   tipo: magico,
   descripcion: "Cura 20HP",
-  efecto: "Gasta 10MP"
+  efecto: "Gasta 10MP",
+  precio:9375
 },
 {
   nombre: "Anillo",
   tipo: magico,
   descripcion: "C/7Hp perdidos gana 1MP",
-  efecto: "Acumulable"
+  efecto: "Acumulable",
+  precio:8750
 },
 {
   nombre: "Anillo",
   tipo: magico,
   descripcion: "-5pt dific. apuntar",
-  efecto: "Acumulable"
+  efecto: "Acumulable",
+  precio:10000
 },
 {
   nombre: "Anillo",
   tipo: magico,
   descripcion: "25 o - HP, da doble turno",
-  efecto: "Si te sacaron de 75 a 99 hp tenés doble turno constante"
+  efecto: "Si te sacaron de 75 a 99 hp tenés doble turno constante",
+  precio:11875
 },
 {
   nombre: "Anillo",
   tipo: magico,
   descripcion: "Al perder todos los HP queda en 1",
-  efecto: "-2 Espíritu"
+  efecto: "-2 Espíritu",
+  precio:10625
 },
 {
   nombre: "Sombrero/Bandana/Pañuelo",
   tipo: magico,
   descripcion: "+1 en un atributo Social",
-  efecto: "tira al azar entre Carisma, manipulación y astucia"
+  efecto: "tira al azar entre Carisma, manipulación y astucia",
+  precio:13750
 },
 {
   nombre: "Sombrero/Bandana/Pañuelo",
   tipo: magico,
   descripcion: "+1 en un atributo Mental ",
-  efecto: "tira al azar entre inteligencia, saber y percibi"
+  efecto: "tira al azar entre inteligencia, saber y percibi",
+  precio:13750
 },
 {
   nombre: "Sombrero/Bandana/Pañuelo",
   tipo: magico,
   descripcion: "10% Reflejo",
-  efecto: "Max 150%"
+  efecto: "Max 150%",
+  precio:11250
 },
 {
   nombre: "Sombrero/Bandana/Pañuelo",
   tipo: magico,
   descripcion: "-5pt dific. apuntar",
-  efecto: "Acumulable"
+  efecto: "Acumulable",
+  precio:10000
 },
 {
   nombre: "Sombrero/Bandana/Pañuelo",
   tipo: magico,
   descripcion: "+1D6 pt de voluntad al ganar combate",
-  efecto: "No acumulable"
+  efecto: "No acumulable",
+  precio:10000
 },
 {
   nombre: "Sombrero/Bandana/Pañuelo",
   tipo: magico,
   descripcion: "25% de ganar 1 espíritu al ganar un combate",
-  efecto: "Acumulable hasta 75%"
+  efecto: "Acumulable hasta 75%",
+  precio:10000
 },
 {
   nombre: "Guantes",
   tipo: magico,
   descripcion: "",
-  efecto: "+1 en Astucia"
+  efecto: "+1 en Astucia",
+  precio:13750
 },
 {
   nombre: "Guantes",
   tipo: magico,
   descripcion: "",
-  efecto: "+1 en Fuerza"
+  efecto: "+1 en Fuerza",
+  precio:13750
 },
 {
   nombre: "Guantes",
   tipo: magico,
   descripcion: "10% Reflejo",
-  efecto: "Max 150%"
+  efecto: "Max 150%",
+  precio:11250
 },
 {
   nombre: "Guantes",
   tipo: magico,
   descripcion: "C/7Hp perdidos gana 1MP",
-  efecto: "Acumulable"
+  efecto: "Acumulable",
+  precio:8750
 },
 {
   nombre: "Guantes",
   tipo: magico,
   descripcion: "",
-  efecto: "+3 en Bloquear"
+  efecto: "+3 en Bloquear",
+  precio:11250
 },
 {
   nombre: "Guantes",
   tipo: magico,
   descripcion: "",
-  efecto: "+3 en Robar"
+  efecto: "+3 en Robar",
+  precio:11250
 },
 {
   nombre: "Remera/Camisa",
   tipo: magico,
   descripcion: "+1D4 C/V que gane XP ",
-  efecto: "Acumulable"
+  efecto: "Acumulable",
+  precio:13750
 },
 {
   nombre: "Remera/Camisa",
   tipo: magico,
   descripcion: "25% de ganar 1 espíritu al ganar un combate",
-  efecto: "Acumulable hasta 75%"
+  efecto: "Acumulable hasta 75%",
+  precio:10000
 },
 {
   nombre: "Remera/Camisa",
   tipo: magico,
   descripcion: "10% reflejo",
-  efecto: "Max 150%"
+  efecto: "Max 150%",
+  precio:11250
 },
 {
   nombre: "Remera/Camisa",
   tipo: magico,
   descripcion: "+ 1pt Suerte",
-  efecto: "Max 5"
+  efecto: "Max 5",
+  precio:11250
 },
 {
   nombre: "Remera/Camisa",
   tipo: magico,
   descripcion: "Anula bonif daño pecho/abdomen",
-  efecto: ""
+  efecto: "",
+  precio:13750
 },
 {
   nombre: "Remera/Camisa",
   tipo: magico,
   descripcion: "Regenera 1HP y MP x C/asesinato",
-  efecto: "Acumulable"
+  efecto: "Acumulable",
+  precio:12500
 },
 {
   nombre: "Capa/Campera/Saco",
   tipo: magico,
   descripcion: "+3 tiradas liderazgo",
-  efecto: "Acumulable"
+  efecto: "Acumulable",
+  precio:11250
 },
 {
   nombre: "Capa/Campera/Saco",
   tipo: magico,
   descripcion: "+3 tiradas intimidación",
-  efecto: "Acumulable"
+  efecto: "Acumulable",
+  precio:11250
 },
 {
   nombre: "Capa/Campera/Saco",
   tipo: magico,
   descripcion: "10 % reflejo",
-  efecto: "Max 150%"
+  efecto: "Max 150%",
+  precio:11250
 },
 {
   nombre: "Capa/Campera/Saco",
   tipo: magico,
   descripcion: "25 o - HP, da doble turno",
-  efecto: "Si te sacaron de 75 a 99 hp tenés doble turno constante"
+  efecto: "Si te sacaron de 75 a 99 hp tenés doble turno constante",
+  precio:11875
 },
 {
   nombre: "Capa/Campera/Saco",
   tipo: magico,
   descripcion: "",
-  efecto: "Anula bonif daño pecho/abdomen"
+  efecto: "Anula bonif daño pecho/abdomen",
+  precio:13750
 },
 {
   nombre: "Capa/Campera/Saco",
   tipo: magico,
   descripcion: "Regenera 1HP y MP x C/asesinato",
-  efecto: "acumulable"
+  efecto: "acumulable",
+  precio:12500
 },
 {
   nombre: "Pantalon/Pollera",
   tipo: magico,
   descripcion: "+1 en un atributo Social",
-  efecto: "tira al azar entre Carisma, Manipulación y Astucia"
+  efecto: "tira al azar entre Carisma, Manipulación y Astucia",
+  precio:13750
 },
 {
   nombre: "Pantalon/Pollera",
   tipo: magico,
   descripcion: "+1 en un atributo Mental",
-  efecto: "Tira al azar entre inteligencia, saber y percibir"
+  efecto: "Tira al azar entre inteligencia, saber y percibir",
+  precio:13750
 },
 {
   nombre: "Pantalon/Pollera",
   tipo: magico,
   descripcion: "10% Reflejo",
-  efecto: "Max 150%"
+  efecto: "Max 150%",
+  precio:11250
 },
 {
   nombre: "Pantalon/Pollera",
   tipo: magico,
   descripcion: "",
-  efecto: "+1 en Destreza"
+  efecto: "+1 en Destreza",
+  precio:13750
 },
 {
   nombre: "Pantalon/Pollera",
   tipo: magico,
   descripcion: "+ 3 tiradas de Liderazgo",
-  efecto: "Acumulable"
+  efecto: "Acumulable",
+  precio:11250
 },
 {
   nombre: "Pantalon/Pollera",
   tipo: magico,
   descripcion: "+3 Tiradas de Intimidación",
-  efecto: "Acumulable"
+  efecto: "Acumulable",
+  precio:11250
 },
 
 {
   nombre: "Botas/Zapatos",
   tipo: magico,
   descripcion: "",
-  efecto: "+1 en Astucia"
+  efecto: "+1 en Astucia",
+  precio:13750
 },
 {
   nombre: "Botas/Zapatos",
   tipo: magico,
   descripcion: "",
-  efecto: "+1 en Destreza"
+  efecto: "+1 en Destreza",
+  precio:13750
 },
 {
   nombre: "Botas/Zapatos",
   tipo: magico,
   descripcion: "10% reflejo",
-  efecto: "Max 150%"
+  efecto: "Max 150%",
+  precio:11250
 },
 {
   nombre: "Botas/Zapatos",
   tipo: magico,
   descripcion: "Teletransportador",
-  efecto: "5MP x C/PJ"
+  efecto: "5MP x C/PJ",
+  precio:12500
 },
 {
   nombre: "Botas/Zapatos",
   tipo: magico,
   descripcion: "+1pt Suerte",
-  efecto: "Max 5"
+  efecto: "Max 5",
+  precio:11250
 },
 {
   nombre: "Botas/Zapatos",
   tipo: magico,
   descripcion: "",
-  efecto: "+1 en Voluntad"
+  efecto: "+1 en Voluntad",
+  precio:13750
 },
 {
   nombre: "Cadena/Collar",
   tipo: magico,
   descripcion: "+ 1pt Suerte ",
-  efecto: "Max 5"
+  efecto: "Max 5",
+  precio:11250
 },
 {
   nombre: "Cadena/Collar",
   tipo: magico,
   descripcion: "",
-  efecto: "+ 1 en Carisma"
+  efecto: "+ 1 en Carisma",
+  precio:13750
 },
 {
   nombre: "Cadena/Collar",
   tipo: magico,
   descripcion: "10% Reflejo",
-  efecto: "Max 150%"
+  efecto: "Max 150%",
+  precio:11250
 },
 {
   nombre: "Cadena/Collar",
   tipo: magico,
   descripcion: "+1 en Manipulación",
-  efecto: ""
+  efecto: "",
+  precio:13750
 },
 {
   nombre: "Cadena/Collar",
   tipo: magico,
   descripcion: "Al perder todos los HP queda en 1",
-  efecto: "-2 Espíritu"
+  efecto: "-2 Espíritu",
+  precio:10625
 },
 {
   nombre: "Cadena/Collar",
   tipo: magico,
   descripcion: "",
-  efecto: "+1 en Voluntad"
+  efecto: "+1 en Voluntad",
+  precio:13750
 },
 {
   nombre: "Aretes",
   tipo: magico,
   descripcion: "",
-  efecto: "+1 en Carisma"
+  efecto: "+1 en Carisma",
+  precio:13750
 },
 {
   nombre: "Aretes",
   tipo: magico,
   descripcion: "+ 1pt Suerte",
-  efecto: "Max 5"
+  efecto: "Max 5",
+  precio:11250
 },
 {
   nombre: "Aretes",
   tipo: magico,
   descripcion: "10% Reflejo",
-  efecto: "Max 150%"
+  efecto: "Max 150%",
+  precio:11250
 },
 {
   nombre: "Aretes",
   tipo: magico,
   descripcion: "Cura 10HP",
-  efecto: "Gasta 10MP"
+  efecto: "Gasta 10MP",
+  precio:9375
 },
 {
   nombre: "Aretes",
   tipo: magico,
   descripcion: "Al perder todos los HP queda en 1",
-  efecto: "-2 Espíritu"
+  efecto: "-2 Espíritu",
+  precio:10625
 },
 {
   nombre: "Aretes",
   tipo: magico,
   descripcion: "C/10Hp perdidos gana 1MP",
-  efecto: "Acumulable"
+  efecto: "Acumulable",
+  precio:8750
 },
 {
   nombre: "Parche",
   tipo: magico,
   descripcion: "+1D4 C/V que gane XP",
-  efecto: "Acumulable"
+  efecto: "Acumulable",
+  precio:13750
 },
 {
   nombre: "Parche",
   tipo: magico,
   descripcion: "+1 en Suerte",
-  efecto: "Max 5"
+  efecto: "Max 5",
+  precio:11250
 },
 {
   nombre: "Parche",
   tipo: magico,
   descripcion: "10% reflejo",
-  efecto: "Max 150%"
+  efecto: "Max 150%",
+  precio:11250
 },
 {
   nombre: "Parche",
   tipo: magico,
   descripcion: "",
-  efecto: "+1 en Voluntad"
+  efecto: "+1 en Voluntad",
+  precio:13750
 },
 {
   nombre: "Parche",
   tipo: magico,
   descripcion: "+3 tiradas de Liderazgo",
-  efecto: "Acumulable"
+  efecto: "Acumulable",
+  precio:11250
 },
 {
   nombre: "Parche",
   tipo: magico,
   descripcion: "-5pt dificultad apuntar",
-  efecto: "Acumulable"
+  efecto: "Acumulable",
+  precio:10000
 },
 {
   nombre: "Brazalete/Amuleto",
   tipo: magico,
   descripcion: "+1D6 Fuerza C/1MP",
-  efecto: "Máx aplicable 1D6 c/7 en Res mental"
+  efecto: "Máx aplicable 1D6 c/7 en Res mental",
+  precio:10000
 },
 {
   nombre: "Brazalete/Amuleto",
   tipo: magico,
   descripcion: "+ 1pt Suerte ",
-  efecto: "Max 5"
+  efecto: "Max 5",
+  precio:11250
 },
 {
   nombre: "Brazalete/Amuleto",
   tipo: magico,
   descripcion: "10% Reflejo",
-  efecto: "Max 150%"
+  efecto: "Max 150%",
+  precio:11250
 },
 {
   nombre: "Brazalete/Amuleto",
   tipo: magico,
   descripcion: "",
-  efecto: "+1 en Astucia"
+  efecto: "+1 en Astucia",
+  precio:13750
 },
 {
   nombre: "Brazalete/Amuleto",
   tipo: magico,
   descripcion: "-5pt dific. apuntar",
-  efecto: "Acumulable"
+  efecto: "Acumulable",
+  precio:8750
 },
 
 {
   nombre: "Upgrades",
   tipo: magico,
   descripcion: "+1D6 Reparaciones",
-  efecto: "Se tira el dado después del D20 y se suma. No acumulable"
+  efecto: "Se tira el dado después del D20 y se suma. No acumulable",
+  precio:8000
 },
 {
   nombre: "Upgrades",
   tipo: magico,
   descripcion: "+1D6 Medicina",
-  efecto: "Se tira el dado después del D20 y se suma. No acumulable"
+  efecto: "Se tira el dado después del D20 y se suma. No acumulable",
+  precio:8000
 },
 {
   nombre: "Upgrades",
   tipo: magico,
   descripcion: "+1D6 Ciencias",
-  efecto: "Se tira el dado después del D20 y se suma. No acumulable"
+  efecto: "Se tira el dado después del D20 y se suma. No acumulable",
+  precio:8000
 },
 {
   nombre: "Upgrades",
   tipo: magico,
   descripcion: "+1D6 Expresión Artística",
-  efecto: "Se tira el dado después del D20 y se suma. No acumulable"
+  efecto: "Se tira el dado después del D20 y se suma. No acumulable",
+  precio:8000
 },
 {
   nombre: "Upgrades",
   tipo: magico,
   descripcion: "+1D6 Orientación",
-  efecto: "Se tira el dado después del D20 y se suma. No acumulable"
+  efecto: "Se tira el dado después del D20 y se suma. No acumulable",
+  precio:8000
 },
 {
   nombre: "Upgrades",
   tipo: magico,
   descripcion: "+1D6 Lingüística",
-  efecto: "Se tira el dado después del D20 y se suma. No acumulable"
+  efecto: "Se tira el dado después del D20 y se suma. No acumulable",
+  precio:8000
 }
 ];
 
@@ -1748,113 +1982,257 @@ export const itemsOnlyKundums = [
   }
 ];
 
-export const efectosMagicos = [{
-  nombre: "Daño Elemental",
-  efecto: "1MP - X flecha, +5pt daño"
-},
-{
-  nombre: "Fuego",
-  efecto: "Suerte si gana 1d6 daño x turno"
-},
-{
-  nombre: "Electrico",
-  efecto: "Arma CC +4"
-},
-{
-  nombre: "Tierra",
-  efecto: "Ataca furtivo(bajo tierra)"
-},
-{
-  nombre: "Viento",
-  efecto: "DES +2"
-},
-{
-  nombre: "Agua",
-  efecto: "Rival DES -1"
-},
-{
-  nombre: "Hielo",
-  efecto: "Congela localización: el rival tira RES AMB -30, el restante es el negativo. c/TC la tirada rival tiene +5"
-},
-{
-  nombre: "No elemental",
-  efecto: "LANZA una ráfaga extra. Daño (VOLx1.5) en D6"
-},
-{
-  nombre: "50% elegir el lugar del daño",
-  efecto: ""
-},
-{
-  nombre: "C/5Mp sube 1 vez mas el daño base",
-  efecto: "la dificultad sube en un 50%"
-},
-{
-  nombre: "Roba habilidad opart x 1D10 TC",
-  efecto: "Robar vs Res Mental. Si tiene + de 1 o-part se tira al azar. Solo una opart a la vez"
-},
-{
-  nombre: "Recupera 10% daño en Hp",
-  efecto: "C/1mp ataca a un enemigo*"
-},
-{
-  nombre: "Roba 10% daño en mp",
-  efecto: ""
-},
-{
-  nombre: "El daño que saca no se puede curar",
-  efecto: "Hasta la proxima luz de luna"
-},
-{
-  nombre: "Envenena 1D6 x turno acumulable",
-  efecto: "ciencias 20pts curar un estado. Cada TC de curación quita veneno de una sola locación"
-},
-{
-  nombre: "C/5pjs q mate sube +1daño",
-  efecto: "Acumulable x usuario"
-},
-{
-  nombre: "Rival tiene menos de 100xp que usuario 10% de matar",
-  efecto: "Permite robar al mismo tiempo "
-},
-{
-  nombre: "tira Robar vs Alerta, si es exitoso el usuario pierde 1 MP, sino no",
-  efecto: ""
-},
-{
-  nombre: "Ataca con sigilo y despues normal",
-  efecto: "1 mp"
-},
-{
-  nombre: "1Mp regenera 4HP",
-  efecto: "en el usuario"
-},
-{
-  nombre: "Si golpeo el turno pasado ",
-  efecto: "los daños fisicos hacen 50% -"
-},
-{
-  nombre: "+1D4 lvls en una opart ",
-  efecto: "Anula oparts alrededor"
-},
-{
-  nombre: "anula oparts del mismo nivel que la máxima de este usuario. Para lograrlo lanza Perc+magia vs Vol+Afinidad (rival). Gasta 5mp, pero se tira una sola vez por combate",
-  efecto: ""
-},
-{
-  nombre: "C/enemigo que golpea da 1XP",
-  efecto: "1vez x pj cada dia"
-},
-{
-  nombre: "El 10% de daño se agrega a voluntad",
-  efecto: ""
-},
-{
-  nombre: "Ventaja",
-  efecto: "Tira 2D20 para atacar con esta arma, elige el resultado que prefiera"
-},
-{
-  nombre: "Baja en 1D3 la afin de una opart ",
-  efecto: "El D3 se tira una sola vez. La o-part puede cambiarse con la restricción de 24hs"
-},
+// export const efectosMagicos = [{
+//   nombre: "Daño Elemental",
+//   efecto: "1MP - X flecha, +5pt daño",
+//   precio:15000
+// },
+// {
+//   nombre: "Fuego",
+//   efecto: "Suerte si gana 1d6 daño x turno",
+//   precio:
+// },
+// {
+//   nombre: "Electrico",
+//   efecto: "Arma CC +4",
+//   precio:
+// },
+// {
+//   nombre: "Tierra",
+//   efecto: "Ataca furtivo(bajo tierra)",
+//   precio:
+// },
+// {
+//   nombre: "Viento",
+//   efecto: "DES +2",
+//   precio:
+// },
+// {
+//   nombre: "Agua",
+//   efecto: "Rival DES -1",
+//   precio:
+// },
+// {
+//   nombre: "Hielo",
+//   efecto: "Congela localización: el rival tira RES AMB -30, el restante es el negativo. c/TC la tirada rival tiene +5",
+//   precio:
+// },
+// {
+//   nombre: "No elemental",
+//   efecto: "LANZA una ráfaga extra. Daño (VOLx1.5) en D6",
+//   precio:
+// },
+// {
+//   nombre: "50% elegir el lugar del daño",
+//   efecto: "",
+//   precio:
+// },
+// {
+//   nombre: "C/5Mp sube 1 vez mas el daño base",
+//   efecto: "la dificultad sube en un 50%",
+//   precio:
+// },
+// {
+//   nombre: "Roba habilidad opart x 1D10 TC",
+//   efecto: "Robar vs Res Mental. Si tiene + de 1 o-part se tira al azar. Solo una opart a la vez",
+//   precio:
+// },
+// {
+//   nombre: "Recupera 10% daño en Hp",
+//   efecto: "C/1mp ataca a un enemigo*",
+//   precio:
+// },
+// {
+//   nombre: "Roba 10% daño en mp",
+//   efecto: "",
+//   precio:
+// },
+// {
+//   nombre: "El daño que saca no se puede curar",
+//   efecto: "Hasta la proxima luz de luna",
+//   precio:
+// },
+// {
+//   nombre: "Envenena 1D6 x turno acumulable",
+//   efecto: "ciencias 20pts curar un estado. Cada TC de curación quita veneno de una sola locación",
+//   precio:
+// },
+// {
+//   nombre: "C/5pjs q mate sube +1daño",
+//   efecto: "Acumulable x usuario",
+//   precio:
+// },
+// {
+//   nombre: "Rival tiene menos de 100xp que usuario 10% de matar",
+//   efecto: "Permite robar al mismo tiempo ",
+//   precio:
+// },
+// {
+//   nombre: "tira Robar vs Alerta, si es exitoso el usuario pierde 1 MP, sino no",
+//   efecto: "",
+//   precio:
+// },
+// {
+//   nombre: "Ataca con sigilo y despues normal",
+//   efecto: "1 mp",
+//   precio:
+// },
+// {
+//   nombre: "1Mp regenera 4HP",
+//   efecto: "en el usuario",
+//   precio:
+// },
+// {
+//   nombre: "Si golpeo el turno pasado ",
+//   efecto: "los daños fisicos hacen 50% -",
+//   precio:
+// },
+// {
+//   nombre: "+1D4 lvls en una opart ",
+//   efecto: "Anula oparts alrededor",
+//   precio:
+// },
+// {
+//   nombre: "anula oparts del mismo nivel que la máxima de este usuario. Para lograrlo lanza Perc+magia vs Vol+Afinidad (rival). Gasta 5mp, pero se tira una sola vez por combate",
+//   efecto: "",
+//   precio:
+// },
+// {
+//   nombre: "C/enemigo que golpea da 1XP",
+//   efecto: "1vez x pj cada dia",
+//   precio:
+// },
+// {
+//   nombre: "El 10% de daño se agrega a voluntad",
+//   efecto: "",
+//   precio:
+// },
+// {
+//   nombre: "Ventaja",
+//   efecto: "Tira 2D20 para atacar con esta arma, elige el resultado que prefiera",
+//   precio:
+// },
+// {
+//   nombre: "Baja en 1D3 la afin de una opart ",
+//   efecto: "El D3 se tira una sola vez. La o-part puede cambiarse con la restricción de 24hs",
+//   precio:
+// },
 
-]
+// ]
+
+export const vehiculos = [{
+  nombre:"Neon Skate",
+  
+},
+{
+  nombre:"Neon Skate",
+  
+},
+{
+  nombre:"Neon Skate",
+  
+},
+{
+  nombre:"Neon Skate",
+  
+},
+{
+  nombre:"Bípedo",
+  
+},
+{
+  nombre:"Bípedo",
+  
+},
+{
+  nombre:"Bípedo",
+  
+},
+{
+  nombre:"Cuadrúpedo Ligero",
+  
+},
+{
+  nombre:"Cuadrúpedo Ligero"
+},
+{
+  nombre:"Pesados y Especiales"
+}]
+
+export const kundums = [{
+  nombre:"Kundum",
+  tipo:"Bronce",
+  precio:6500
+},
+{
+  nombre:"Kundum",
+  tipo :"Plata",
+  precio:9500
+},
+{
+  nombre:"Kundum",
+  tipo:"Oro",
+  precio:13000
+},
+{
+  nombre:"Kundum",
+  tipo:"Antigua",
+  precio:15000
+},
+{
+  nombre:"Kundum",
+  tipo:mageBloodPercent(),
+  precio: 0
+}]
+
+export const baseProducts = [{
+  nombre:"Raciones",
+  cantidad:randomNumber(8,40),
+  precio:70
+},{
+  nombre:"Botiquines",
+  cantidad:randomNumber(80,500),
+  precio: 12
+},{
+  nombre:"Combustible",
+  cantidad:`${randomNumber(2,10)} (1TL manejando)`,
+  precio:1500
+},{
+  nombre:"Hierba azul",
+  cantidad:randomNumber(2,20),
+  precio:70
+},{
+  nombre:"Hierba roja",
+  cantidad:randomNumber(2,14),
+  precio:100
+},{
+  nombre:"Hierba verde",
+  cantidad:randomNumber(1,12),
+  precio:150
+},{
+  nombre:"Hierba violeta",
+  cantidad:randomNumber(0,10),
+  precio:200
+},{
+  nombre:"Hierba amarilla",
+  cantidad:randomNumber(0,9),
+  precio:300
+},{
+  nombre:"Mochila 8 slots",
+  cantidad:randomNumber(0,4),
+  precio:500
+},{
+  nombre:"Mochila 10 slot",
+  cantidad:randomNumber(0,3),
+  precio:800
+},{
+  nombre:"Mochila 12 slot",
+  cantidad:randomNumber(0,2),
+  precio:1200
+}];
+
+
+function randomNumber(min,max){
+  const randomNumber = Math.floor(Math.random()*(max - min + 1)) + min;
+  return randomNumber
+}
