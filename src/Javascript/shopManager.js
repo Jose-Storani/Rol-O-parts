@@ -88,7 +88,7 @@ function selectItemType() {
         case 19:
         case 20:
         case 21:
-            item = randomItem(steamPunkItems);
+            item = randomItem(steamPunkItems.concat(itemsMagicos));
             break;
         default:
             item = "ERROR";
@@ -338,6 +338,9 @@ const generateShopButton = document.getElementById("shopButton");
 generateShopButton.addEventListener("click", () => {
     populateShopTable(generateArray(20,selectItemType),generateArray(5,selectWeapon));;
 });
+
+
+
 
 
 

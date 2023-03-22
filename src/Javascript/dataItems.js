@@ -2,12 +2,6 @@ const cyberItem = "Cyber Item",
   steamPunk = "Steampunk",
   magico = "Mágico";
 
-  function mageBloodPercent() {
-    const randomBloodPercent = Math.floor(Math.random() * (39) + 2)
-    return `Sangre de mago ${randomBloodPercent}`
-}
-
-
 export const cyberPunkItems = [
 
   {
@@ -2191,8 +2185,8 @@ export const kundums = [{
 },
 {
   nombre:"Kundum",
-  tipo:mageBloodPercent(),
-  precio: 0
+  tipo:`Sangre de mago %${randomNumber(1,8) * 5}`,
+  precio: 7500
 }]
 
 export const baseProducts = [{

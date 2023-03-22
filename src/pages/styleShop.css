@@ -1,0 +1,22 @@
+body{
+    background-color:#dbcd10e7;
+    
+}
+h1{
+    text-align: center;
+    margin: 2vh;
+}
+.buttonsShop{
+   
+    margin: auto;
+    width: 50vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.inputDiv{
+    
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+}

@@ -16,11 +16,11 @@ body{
 
 a{
   text-decoration: none;
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
 a:hover{
-  color: red;
+  color: #9370DB;
 }
 
 .contenedorBotones{
