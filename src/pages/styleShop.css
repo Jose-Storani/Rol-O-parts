@@ -1,7 +1,4 @@
-body{
-    background-color:#dbcd10e7;
-    
-}
+
 h1{
     text-align: center;
     margin: 2vh;
@@ -19,4 +16,8 @@ h1{
     display: flex;
     justify-content: center;
     margin-top: 5vh;
+}
+
+.inputDiv select{
+    width: 200px;
 }

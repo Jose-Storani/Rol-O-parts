@@ -11,7 +11,7 @@ cpSpItems.sort((a, b) => a.nombre.localeCompare(b.nombre));
 armasBasicas.sort((a, b) => a.nombre.localeCompare(b.nombre));
 itemsMagicos.sort((a, b) => a.nombre.localeCompare(b.nombre));
 
-console.log(allData)
+
 
 
 
@@ -52,7 +52,7 @@ console.log(allData)
 
   
   // Get table and tbody elements
-  const table = document.querySelector('#myTable');
+  const table = document.getElementById('myTable');
   const itemsTable = table.querySelector('tbody');
   const weaponsTable = document.getElementById("weaponsTable");
   const weaponsTableBody = weaponsTable.querySelector("tbody")
@@ -62,7 +62,6 @@ console.log(allData)
   // Function to populate the table with data
   function populateTable(data,table) {
 
-    // establecerInnerHTML(table)
     // Clear existing table rows
     table.innerHTML = ""
   

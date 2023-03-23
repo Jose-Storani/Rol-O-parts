@@ -4,21 +4,31 @@ import {
     itemsMagicos,
     armasBasicas,
     itemsOnlyKundums,
-    baseProducts,    
+    baseProducts,
     vehiculos,
     kundums,
     randomNumber,
-    efectosMagicos
+    efectosMagicos,
+
 } from "./dataItems.js";
 
+
+
+//tablas 
 let shopTable = document.getElementById("shopTable");
 let shopTableBody = shopTable.querySelector("tbody");
-let percentButton = document.getElementById("percent");
+
+
 const shopBaseProducts = document.getElementById("shopTableBaseProducts")
 const shopBaseProductsBody = shopBaseProducts.querySelector("tbody");
 
 const weaponsTable = document.getElementById("weaponsTable");
 const weaponsTableBody = weaponsTable.querySelector("tbody")
+
+//porcentaje de precio aplicable
+let percentButton = document.getElementById("cars");
+
+
 
 
 //devuelve un item random del array de items correspondiente
@@ -97,7 +107,7 @@ function selectItemType() {
     return item;
 }
 
-function selectWeapon(){
+function selectWeapon() {
     const randomNumberType = Math.floor(Math.random() * 26) + 1;
     let item;
     switch (randomNumberType) {
@@ -124,63 +134,63 @@ function selectWeapon(){
             item = armasBasicas[3];
             break;
         case 7:
-            item = armasBasicas [4];
-        case 8 : 
-        item = armasBasicas[5];
-        break;
+            item = armasBasicas[4];
+        case 8:
+            item = armasBasicas[5];
+            break;
 
-        case 9 :
+        case 9:
             item = armasBasicas[6];
             break;
 
-        case 10: 
-        item = armasBasicas[7];
-        break;
-        
-        case 11:
-            item= armasBasicas[8];
+        case 10:
+            item = armasBasicas[7];
             break;
-        
+
+        case 11:
+            item = armasBasicas[8];
+            break;
+
         case 12:
             item = armasBasicas[9];
             break;
-        
+
         case 13:
             item = armasBasicas[10];
             break;
-        
+
         case 14:
-            item= armasBasicas[11];
+            item = armasBasicas[11];
             break;
 
         case 15:
             item = armasBasicas[12];
             break;
-        
+
         case 16:
             item = armasBasicas[13];
             break;
-        
+
         case 17:
             item = armasBasicas[14];
             break;
-        
+
         case 18:
             item = armasBasicas[15];
             break;
-        
+
         case 19:
             item = armasBasicas[16];
             break;
-        
+
         case 20:
             item = armasBasicas[17];
             break;
-        
+
         case 21:
             item = armasBasicas[18];
             break;
-        
+
         case 22:
             item = armasBasicas[19];
             break;
@@ -189,51 +199,54 @@ function selectWeapon(){
             break;
     }
 
-    const isMagic = randomNumber(1,100);
-    if(isMagic <= 10 && item.nombre !== "NADA"){
-        item.efectoMagico = efectosMagicos[randomNumber(0,26)];
+    const isMagic = randomNumber(1, 100);
+    if (isMagic <= 10 && item.nombre !== "NADA") {
+        item.efectoMagico = efectosMagicos[randomNumber(0, 26)];
         item.precio += item.efectoMagico.precio
         return item
     }
-    else{
+    else {
         return item;
     }
-    
+
 }
 
 function generateArray(arrayLength, arrayTypeFunction) {
     let i = 0;
     let arrayItemsShop = [];
+    let numberOfItems = percentButton.value === "Desierto" ? 7 : percentButton.value === "Poblado" ? 10 : percentButton.value === "Ciudad" ? 15 : 20
     //es 20 porque es la cantidad de items por shop
     while (i < arrayLength) {
         i++;
         let itemSelected = arrayTypeFunction();
         arrayItemsShop.push(itemSelected);
     }
-    return arrayItemsShop;
+    return arrayItemsShop.slice(0, numberOfItems);
 }
 
 
 function percentButtonValue() {
-    return 1 + percentButton.value / 100;
+    const priceRealValue = percentButton.value == "Desierto" ? 10 : percentButton.value == "Poblado" ? 15 : percentButton.value == "Ciudad" ? 20 : 30
+    return 1 + priceRealValue / 100;
 }
 
 function populateShopTable(arrayItems, arrayWeapons) {
+
     shopTableBody.innerHTML = "";
-    shopBaseProductsBody.innerHTML= "";
+    shopBaseProductsBody.innerHTML = "";
     weaponsTableBody.innerHTML = "";
 
     let arrayItemsCopy = JSON.parse(JSON.stringify(arrayItems));
     let baseProductsCopy = JSON.parse(JSON.stringify(baseProducts));
     let weaponsCopy = JSON.parse(JSON.stringify(arrayWeapons));
-    console.log(weaponsCopy)
+
 
 
     arrayItemsCopy.forEach((item) => {
         if (item.nombre == "NADA") {
             return;
         }
-       
+
 
         item.precio = Math.round(item.precio * percentButtonValue()) || "Pregunte al master";
 
@@ -258,8 +271,8 @@ function populateShopTable(arrayItems, arrayWeapons) {
         shopTableBody.appendChild(row);
     });
 
-    baseProductsCopy.forEach((item)=>{
-        if(item.cantidad === 0){
+    baseProductsCopy.forEach((item) => {
+        if (item.cantidad === 0) {
             return;
         }
 
@@ -280,23 +293,23 @@ function populateShopTable(arrayItems, arrayWeapons) {
         row.appendChild(priceCell)
 
         shopBaseProductsBody.appendChild(row)
-        
+
     });
 
 
 
-    
 
-    weaponsCopy.forEach((item)=>{
-        if(item.nombre === "NADA"){
+
+    weaponsCopy.forEach((item) => {
+        if (item.nombre === "NADA") {
             return;
         }
 
 
-        item.precio = Math.round(item.precio * percentButtonValue()); 
-        
+        item.precio = Math.round(item.precio * percentButtonValue());
+
         const row = document.createElement("tr")
-        
+
         const nameCell = document.createElement("td");
         const typeCell = document.createElement("td");
         const dificultCell = document.createElement("td");
@@ -334,9 +347,21 @@ function populateShopTable(arrayItems, arrayWeapons) {
 
 }
 
+
+
+
+let showItemsTable = (tabla) => {
+    if (tabla.hasAttribute("hidden")) {
+        tabla.removeAttribute("hidden");
+    }
+}
 const generateShopButton = document.getElementById("shopButton");
 generateShopButton.addEventListener("click", () => {
-    populateShopTable(generateArray(20,selectItemType),generateArray(5,selectWeapon));;
+    populateShopTable(generateArray(20, selectItemType), generateArray(5, selectWeapon));
+    showItemsTable(shopTable)
+    showItemsTable(shopBaseProducts)
+    showItemsTable(weaponsTable)
+
 });
 
 

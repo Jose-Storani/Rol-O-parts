@@ -32,13 +32,20 @@
 
       
     </div>
-    <div class="inputDiv" >
-      <input type="number" name="percent" id="percent">
+    
+    <div class="inputDiv">
+      <select  name="cars" id="cars">
+        <option value="Desierto">Desierto</option>
+        <option value="Poblado">Poblado</option>
+        <option value="Ciudad">Ciudad</option>
+        <option value="Metropolis">Metropolis</option>
+      </select>
     </div>
     
     
+    
 
-      <table  id="shopTable">
+      <table hidden  id="shopTable">
         <thead>
           <tr>
             <th>Nombre</th>
@@ -52,7 +59,7 @@
           
         </tbody>
 
-        <table  id="shopTableBaseProducts">
+        <table hidden  id="shopTableBaseProducts">
           <thead>
             <tr>
               <th>Nombre</th>
@@ -64,7 +71,7 @@
             
           </tbody>
 
-          <table id="weaponsTable">
+          <table hidden id="weaponsTable">
             <thead>
               <tr>
                 <th>Nombre</th>
