@@ -26,7 +26,7 @@ const weaponsTable = document.getElementById("weaponsTable");
 const weaponsTableBody = weaponsTable.querySelector("tbody")
 
 //porcentaje de precio aplicable
-let percentButton = document.getElementById("cars");
+let percentButton = document.getElementById("locations");
 
 
 
@@ -60,7 +60,7 @@ function selectItemType() {
         case 1:
         case 2:
             item = {
-                nombre: "NADA",
+                nombre: "Item vendido",
             };
             break;
         case 3:
@@ -87,7 +87,7 @@ function selectItemType() {
         case 13:
         case 14:
             item = {
-                nombre: "Opart",
+                nombre: `Opart ${randomNumber(1,220)}`,
             };
 
             break;
@@ -118,7 +118,7 @@ function selectWeapon() {
         case 25:
         case 26:
             item = {
-                nombre: "NADA",
+                nombre: "Item vendido",
             };
             break;
         case 3:
@@ -214,20 +214,22 @@ function selectWeapon() {
 function generateArray(arrayLength, arrayTypeFunction) {
     let i = 0;
     let arrayItemsShop = [];
-    let numberOfItems = percentButton.value === "Desierto" ? 7 : percentButton.value === "Poblado" ? 10 : percentButton.value === "Ciudad" ? 15 : 20
+    let locationValues = percentButtonValue();
+
+let locationQuantity = locationValues.newQuantity
     //es 20 porque es la cantidad de items por shop
     while (i < arrayLength) {
         i++;
         let itemSelected = arrayTypeFunction();
         arrayItemsShop.push(itemSelected);
     }
-    return arrayItemsShop.slice(0, numberOfItems);
+    return arrayItemsShop.slice(0, Math.round(arrayLength * locationQuantity));
 }
 
 
 function percentButtonValue() {
-    const priceRealValue = percentButton.value == "Desierto" ? 10 : percentButton.value == "Poblado" ? 15 : percentButton.value == "Ciudad" ? 20 : 30
-    return 1 + priceRealValue / 100;
+    const newValues = percentButton.value == "Paramo" ? {newPrice: 1.20,newQuantity:0.75} : percentButton.value == "Desierto" ? {newPrice: 1.30,newQuantity:0.60}  : percentButton.value == "Pueblo" ? {newPrice: 1.15,newQuantity:0.85}  : percentButton.value == "Ciudad" ? {newPrice: 1.10,newQuantity:1} : percentButton.value == "Metrópolis" ? {newPrice: 1,newQuantity:1} : percentButton.value == "Desolado" ? {newPrice: 1.40,newQuantity:0.30} : percentButton.value == "Camino" ? {newPrice: 1.25,newQuantity:0.85} : percentButton.value == "Trotamundo" ? {newPrice: 1.35,newQuantity:1} : {newPrice: 1,newQuantity:0.40}     
+    return newValues;
 }
 
 function populateShopTable(arrayItems, arrayWeapons) {
@@ -240,15 +242,25 @@ function populateShopTable(arrayItems, arrayWeapons) {
     let baseProductsCopy = JSON.parse(JSON.stringify(baseProducts));
     let weaponsCopy = JSON.parse(JSON.stringify(arrayWeapons));
 
+    let locationValues = percentButtonValue();
+    let locationPrice = locationValues.newPrice
+    let locationQuantity = locationValues.newQuantity
+    console.log(locationPrice)
+    console.log(locationQuantity)
+    
 
 
     arrayItemsCopy.forEach((item) => {
-        if (item.nombre == "NADA") {
+        if (item.cantidad == 0) {
             return;
-        }
+        };
 
 
-        item.precio = Math.round(item.precio * percentButtonValue()) || "Pregunte al master";
+
+        item.precio = Math.round(item.precio * locationPrice) || "Pregunte al master" ;
+
+
+    
 
         const row = document.createElement("tr");
         const nameCell = document.createElement("td");
@@ -275,8 +287,12 @@ function populateShopTable(arrayItems, arrayWeapons) {
         if (item.cantidad === 0) {
             return;
         }
+        
+        item.precio = Math.round(item.precio * locationPrice);
+        item.cantidad = Math.floor(item.cantidad * locationQuantity);
 
-        item.precio = Math.round(item.precio * percentButtonValue());
+        
+
 
 
         const row = document.createElement("tr");
@@ -301,12 +317,12 @@ function populateShopTable(arrayItems, arrayWeapons) {
 
 
     weaponsCopy.forEach((item) => {
-        if (item.nombre === "NADA") {
+        if (item.nombre === "Item vendido") {
             return;
         }
 
 
-        item.precio = Math.round(item.precio * percentButtonValue());
+        item.precio = Math.round(item.precio * locationPrice);
 
         const row = document.createElement("tr")
 

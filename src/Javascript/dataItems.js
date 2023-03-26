@@ -2198,8 +2198,8 @@ export const baseProducts = [{
   cantidad:randomNumber(80,500),
   precio: 12
 },{
-  nombre:"Combustible",
-  cantidad:`${randomNumber(2,10)} (1TL manejando)`,
+  nombre:"Combustible (1TL manejando)",
+  cantidad: randomNumber(2,10),
   precio:1500
 },{
   nombre:"Hierba azul",
