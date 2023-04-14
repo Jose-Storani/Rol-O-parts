@@ -200,10 +200,15 @@ function selectWeapon() {
     }
 
     const isMagic = randomNumber(1, 100);
-    if (isMagic <= 10 && item.nombre !== "NADA") {
-        item.efectoMagico = efectosMagicos[randomNumber(0, 26)];
-        item.precio += item.efectoMagico.precio
-        return item
+    if (isMagic <= 10 && item.nombre !== "Item Vendido") {
+       
+       let magicWeapon = {
+            ...structuredClone(item),
+            efectoMagico : efectosMagicos[randomNumber(0, 26)]
+
+        }
+        magicWeapon.precio += magicWeapon.efectoMagico.precio
+        return magicWeapon
     }
     else {
         return item;
@@ -242,16 +247,17 @@ function populateShopTable(arrayItems, arrayWeapons) {
     let baseProductsCopy = JSON.parse(JSON.stringify(baseProducts));
     let weaponsCopy = JSON.parse(JSON.stringify(arrayWeapons));
 
+   
+    
+   
+
     let locationValues = percentButtonValue();
     let locationPrice = locationValues.newPrice
     let locationQuantity = locationValues.newQuantity
-    console.log(locationPrice)
-    console.log(locationQuantity)
-    
-
-
+  
     arrayItemsCopy.forEach((item) => {
-        if (item.cantidad == 0) {
+        if (item.nombre == "Item vendido") {
+            console.log("ESTA VENDIDO BRO")
             return;
         };
 

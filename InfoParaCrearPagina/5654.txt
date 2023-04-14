@@ -1,0 +1,45 @@
+randon number entre 1 y 27;
+
+shop 20 slots 
+
+
+raciones entre 6 y 40;
+botiquines 80 a 500:
+combustible de 2 a 10 galones;
+hierbas azul 2 a 20
+roja 2 a 14
+verde 1 a 12 
+violeta 0 a 10
+amarilla 0 a 9
+
+
+5 slots de armas BASICAS
+cada arma tiene un 10% de ser magica y el efecto al azar esta en la planilla de efectos de 1 a 26
+
+
+mochilas shop:
+8 0 a 4 
+10 0 a 3 
+12 0 a 2  
+s
+el shop debe contener: 
+nombre
+precio
+descripcion/efecto
+
+
+kundun:
+bronce 36  
+plata 26  
+oro 21
+antigua 10 
+sangre magica 7 cantidad sangre mago numero entre 2 a 40;
+
+
+tipo vehiculo
+neon skate 40%
+bipedo 30
+cuadrupedo ligero 20
+pesados y especiales 10
+
+
