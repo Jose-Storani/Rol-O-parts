@@ -237,14 +237,63 @@ function percentButtonValue() {
     return newValues;
 }
 
-function populateShopTable(arrayItems, arrayWeapons) {
+function crearBaseProductPorClick(){
+    let baseProductCopy = [{
+        nombre:"Raciones",
+        cantidad:randomNumber(8,40),
+        precio:70
+      },{
+        nombre:"Botiquines",
+        cantidad:randomNumber(80,500),
+        precio: 12
+      },{
+        nombre:"Combustible (1TL manejando)",
+        cantidad: randomNumber(2,10),
+        precio:1500
+      },{
+        nombre:"Hierba azul",
+        cantidad:randomNumber(2,20),
+        precio:70
+      },{
+        nombre:"Hierba roja",
+        cantidad:randomNumber(2,14),
+        precio:100
+      },{
+        nombre:"Hierba verde",
+        cantidad:randomNumber(1,12),
+        precio:150
+      },{
+        nombre:"Hierba violeta",
+        cantidad:randomNumber(0,10),
+        precio:200
+      },{
+        nombre:"Hierba amarilla",
+        cantidad:randomNumber(0,9),
+        precio:300
+      },{
+        nombre:"Mochila 8 slots",
+        cantidad:randomNumber(0,4),
+        precio:500
+      },{
+        nombre:"Mochila 10 slot",
+        cantidad:randomNumber(0,3),
+        precio:800
+      },{
+        nombre:"Mochila 12 slot",
+        cantidad:randomNumber(0,2),
+        precio:1200
+      }];
+      return baseProductCopy;
+}
+
+function populateShopTable(arrayItems, arrayBaseProducts, arrayWeapons) {
 
     shopTableBody.innerHTML = "";
     shopBaseProductsBody.innerHTML = "";
     weaponsTableBody.innerHTML = "";
 
     let arrayItemsCopy = JSON.parse(JSON.stringify(arrayItems));
-    let baseProductsCopy = JSON.parse(JSON.stringify(baseProducts));
+    
     let weaponsCopy = JSON.parse(JSON.stringify(arrayWeapons));
 
    
@@ -289,7 +338,7 @@ function populateShopTable(arrayItems, arrayWeapons) {
         shopTableBody.appendChild(row);
     });
 
-    baseProductsCopy.forEach((item) => {
+    arrayBaseProducts.forEach((item) => {
         if (item.cantidad === 0) {
             return;
         }
@@ -379,7 +428,7 @@ let showItemsTable = (tabla) => {
 }
 const generateShopButton = document.getElementById("shopButton");
 generateShopButton.addEventListener("click", () => {
-    populateShopTable(generateArray(20, selectItemType), generateArray(5, selectWeapon));
+    populateShopTable(generateArray(20, selectItemType),crearBaseProductPorClick(), generateArray(5, selectWeapon));
     showItemsTable(shopTable)
     showItemsTable(shopBaseProducts)
     showItemsTable(weaponsTable)
