@@ -1167,7 +1167,18 @@ export const armasBasicas = [{
   costo: "-3 ",
   precio:500
 
-}, {
+}, 
+{
+  nombre: "probando agregar Imte",
+  tipo: "T2",
+  descripcion: "Dificultad: infinto",
+  efecto: "Daño: +9 ",
+  rareza: "HP: 60 ",
+  costo: "-3 ",
+  precio:500
+
+},
+{
   nombre: "Daga Adiosrubia",
   tipo: "T1",
   descripcion: "Dificultad: 8",
