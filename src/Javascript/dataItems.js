@@ -14,13 +14,355 @@ export const cyberPunkItems = [
     precio:8000
   },
   {
-    nombre: "Armor sónica Abdómen",
+    nombre: "Uravity doble",
+    tipo: cyberItem,
+    descripcion: "Vehiculo",
+    efecto: "Cápsula flotante que lleva hasta 2 pasajeros a velocidad de un bípedo.Viene con una batería de 1D4+2 TL de carga. Baúl de 9 Slots, resto de los Stats un bípedo",
+    rareza: "S",
+    costo: 3200,
+    precio:29000
+  },
+  {
+    nombre: "Catalizador M. ",
     tipo: cyberItem,
     descripcion: "",
-    efecto: "(reduce todo daño no mágico en 20%) y después aplica -6 de daño.",
+    efecto: "Toda persona a 1m o menos de distancia puede compartirle hasta 5MP al usuario para realizar algo (se considera una acción rápida)",
+    rareza: "B",
+    costo: 3200,
+    precio:14000
+  },
+  {
+    nombre: "MiKoto Holo Gloves",
+    tipo: cyberItem,
+    descripcion: "",
+    efecto: "Crea a distancia de hasta 5m una copia de neón de tus manos, ideal para manejar a distancia objetos",
+    rareza: "C",
+    costo: 3200,
+    precio:12000
+  },
+  {
+    nombre: "Q-Ribo23",
+    tipo: cyberItem,
+    descripcion: "",
+    efecto: "Pequeño droide redondo que flota al rededor del usuario, tiene 40% de absorver cualquier tipo de ataque mágico, una vez xTL. Si lo hace su dueño tira Suerte, si es menor a 10 Q-Ribo se destruye. Cada usuario puede tener 1 Q-Ribo funcional, encender otro consume un turno completo",
+    rareza: "S",
+    costo: 3200,
+    precio:20000
+  },
+  {
+    nombre: "HOLO Mapper",
+    tipo: cyberItem,
+    descripcion: "",
+    efecto: "Reloj holográfico que mapea una zona. Debe indicarse cuando se activa y cuando se desactiva. Si una zona ya fue mapeada le da al usuario ventaja en orientación",
+    rareza: "A",
+    costo: 3200,
+    precio:11000
+  },
+  {
+    nombre: "MiKoto Cheater",
+    tipo: cyberItem,
+    descripcion: "",
+    efecto: "Tecnomira que se le asigna a un arma (cambiarla a otra es 1TC), con una acción rápida elige un enemigo, hasta que cambie de target tiene +4 en arma distancia contra él",
+    rareza: "B",
+    costo: 3200,
+    precio:16000
+  },
+  {
+    nombre: "Oro sintético",
+    tipo: cyberItem,
+    descripcion: "",
+    efecto: "Pintura para recubrir un item, arma o localización. Si tenés al menos 2 pintadas ganas +1 intimidación. El máximo es 7 partes con un +6 en intimidación ",
+    rareza: "D",
+    costo: 3200,
+    precio:6000
+  },
+  {
+    nombre: "Casco de alta prediccion",
+    tipo: cyberItem,
+    descripcion: "",
+    efecto: "Cada TC podés gastar tu acción rápida para analizar un PJ en combate, cada vez que lo hagas ganas un +1, luego lanzas 1d8. Cuando saques 10 en el D8 podés predecir cómo se va a mover ese PJ dándote +4 contra él en todo tipo de combate. 1 vez por día, 1tl de sol para recargar",
+    rareza: "S",
+    costo: 3200,
+    precio:19000
+  },
+  {
+    nombre: "Brazaletes de presión",
+    tipo: cyberItem,
+    descripcion: "",
+    efecto: "Como acción rápida puede empujar un objeto o persona a 5m de distancia. Como luchador a distancia te permite hacer un ataque gratis con desventaja o tú ataque normal con apuntar gratuito",
+    rareza: "C",
+    costo: 3200,
+    precio:12000
+  },
+  {
+    nombre: "Troyan pin",
+    tipo: cyberItem,
+    descripcion: "",
+    efecto: "Pin pequeño que se puede lanzar o colocar sigilosamente sobre un objetivo. Al conectarse con una cyberterminal podés saber hacia dónde está, combinado con Holo Mapper tenés ubicación exacta. Batería 1 semana, luego 1TL sol para cargar",
+    rareza: "D",
+    costo: 3200,
+    precio:7000
+  },
+  {
+    nombre: "Silenciador pistolas pequeña",
+    tipo: cyberItem,
+    descripcion: "",
+    efecto: "1D8 tiros silenciados",
+    rareza: "C",
+    costo: 3200,
+    precio:5000
+  },
+  {
+    nombre: "Silenciador pistolas media",
+    tipo: cyberItem,
+    descripcion: "",
+    efecto: "1D8 tiros silenciados",
+    rareza: "C",
+    costo: 3200,
+    precio:5000
+  },
+  {
+    nombre: "Silenciador pistolas grande",
+    tipo: cyberItem,
+    descripcion: "",
+    efecto: "1D8 tiros silenciados",
+    rareza: "C",
+    costo: 3200,
+    precio:8000
+  },
+  {
+    nombre: "Silenciador pistolas sniper",
+    tipo: cyberItem,
+    descripcion: "",
+    efecto: "1D8 tiros silenciados",
+    rareza: "C",
+    costo: 3200,
+    precio:10000
+  },
+  {
+    nombre: "MiKoto Deep",
+    tipo: cyberItem,
+    descripcion: "",
+    efecto: "Traje de buceo que anula penalizadores bajo el agua y da +10 en Res Amb para la respiración. Se carga con 1TL solar",
+    rareza: "B",
+    costo: 3200,
+    precio:17000
+  },
+  {
+    nombre: "Hombreras gravitacionales",
+    tipo: cyberItem,
+    descripcion: "",
+    efecto: "Al activarse todos los PJS en 15m a la redonda tienen -2 en DES por cada parte de armadura que tengan puesta y -2 por cada 6 Slots de items ocupados. Como acción rápida se pueden quitar 3 partes de armadura o grupos de slots. Cada hombrera tiene 40hp y los daños menores a 35 no le pásan, hay que destruír ambas cortar el efecto. Se carga con 1TL solar",
+    rareza: "S",
+    costo: 3200,
+    precio:22000
+  },
+  {
+    nombre: "Chip de aprendizaje",
+    tipo: cyberItem,
+    descripcion: "",
+    efecto: "Cirugía menor. Aprendizaje +3",
+    rareza: "B",
+    costo: 3200,
+    precio:8000
+  },
+  {
+    nombre: "Chip de percepción",
+    tipo: cyberItem,
+    descripcion: "",
+    efecto: "Cirugía menor. Descubrir +3",
+    rareza: "B",
+    costo: 3200,
+    precio:8000
+  },
+  {
+    nombre: "Chip de pilotaje",
+    tipo: cyberItem,
+    descripcion: "",
+    efecto: "Cirugía menor. Pilotar +3",
+    rareza: "B",
+    costo: 3200,
+    precio:8000
+  },
+  {
+    nombre: "Chip Médico",
+    tipo: cyberItem,
+    descripcion: "",
+    efecto: "Cirugía menor. Médico +3",
+    rareza: "B",
+    costo: 3200,
+    precio:8000
+  },
+  {
+    nombre: "Chip de Linguística",
+    tipo: cyberItem,
+    descripcion: "",
+    efecto: "Cirugía menor. Linguística +3",
+    rareza: "B",
+    costo: 3200,
+    precio:8000
+  },
+  {
+    nombre: "Chip de Tecnología",
+    tipo: cyberItem,
+    descripcion: "",
+    efecto: "Cirugía menor. Tecnología +3",
+    rareza: "B",
+    costo: 3200,
+    precio:8000
+  },
+  {
+    nombre: "Piel sintética",
+    tipo: cyberItem,
+    descripcion: "",
+    efecto: "Cirugía mayor. En la localización elegida los daños menores a 30 no tiran resistencia y amputar es 45",
+    rareza: "S",
+    costo: 2800,
+    precio:16000
+  },
+  {
+    nombre: "HotGun",
+    tipo: cyberItem,
+    descripcion: "",
+    efecto: "Shotgun laser (2 tiros). Distancia Daño 40+1D8/ cerca Daño 40+2D10 / 2 tiros TC (dif a distancia 35 x tiro, cerca 15) / -6 Arma Distancia. 1TC recarga",
+    rareza: "S",
+    costo: 2800,
+    precio:29000
+  },
+  {
+    nombre: "Daga Merodeadora",
+    tipo: cyberItem,
+    descripcion: "",
+    efecto: "Tecnodaga que tras ser esquivada vuelve a atacar al objetivo con los mismos stats. Si el objetivo esquiva ambas la daga vuelve a su usario. DAGA 7 // +8. Si el usuario tiene ¨Chip arma inteligente¨ con una acción rápida puede recuperar 1D4 de estas dagas",
+    rareza: "A",
+    costo: 2800,
+    precio:4000
+  },
+  {
+    nombre: "ChronoZepam",
+    tipo: cyberItem,
+    descripcion: "",
+    efecto: "Píldora que durante 1TL da Ventaja en Coraje y anula efectos de traumas. Tras pasar efecto Stamina -3D4",
+    rareza: "D",
+    costo: 2800,
+    precio:3000
+  },
+  {
+    nombre: "Treachery",
+    tipo: cyberItem,
+    descripcion: "",
+    efecto: "Dron autopilotado con forma de araña. Va dando descargas eléctricas que quitan 1D8 mp TC. Esquivar/Aprezar 25, HP 30. Al vaciar a un PJ se baja y busca otro",
+    rareza: "A",
+    costo: 2800,
+    precio:18000
+  },
+  {
+    nombre: "NaNosangre",
+    tipo: cyberItem,
+    descripcion: "",
+    efecto: "Consumible. Los próximos 5TC regenera 1D4+1 de HP. Luego -1D10 de stamina",
     rareza: "B",
     costo: 2800,
-    precio:7000
+    precio:5000
+  },
+  {
+    nombre: "Mira laser",
+    tipo: cyberItem,
+    descripcion: "",
+    efecto: "Anula penalizadores de Arma Dist hasta 8pts. No mejora la tirada, solo cancela penalizadores por distancia, apuntar o manejo de arma, no aplica en Ráfaga. Cambiar de un arma a otra es 1 TC completo",
+    rareza: "C",
+    costo: 2800,
+    precio:9000
+  },
+  {
+    nombre: "Granada magnética",
+    tipo: cyberItem,
+    descripcion: "",
+    efecto: "Requiere chip de arma inteligente. El usuario designa un target y lanza la granada con +7 en Lanzar. Daño 40+4D8",
+    rareza: "B",
+    costo: 2800,
+    precio:9000
+  },
+  {
+    nombre: "Respiradero",
+    tipo: cyberItem,
+    descripcion: "",
+    efecto: "Máscara que da +4 en Res Amb si se trata de algún veneno respirable",
+    rareza: "B",
+    costo: 2800,
+    precio:6000
+  },
+  {
+    nombre: "Batería Uravity",
+    tipo: cyberItem,
+    descripcion: "",
+    efecto: "Batería para Uravity Doble. Tiene carga para 1D4+2 TL, luego se vuelve inútil. Ocupa 3 Slots",
+    rareza: "D",
+    costo: 2800,
+    precio:6000
+  },
+  {
+    nombre: "MiKoto Muse",
+    tipo: cyberItem,
+    descripcion: "",
+    efecto: "Computadora de muñeca holográfica multimedial. Artístico +4",
+    rareza: "B",
+    costo: 2800,
+    precio:9000
+  },
+  {
+    nombre: "Neural Dysk",
+    tipo: cyberItem,
+    descripcion: "",
+    efecto: "Cirugía menor para chip de control mental. Dos discos que flotan ayudándote en varias tareas: Trepar, Esquivar, Atletismo +3. Distraer a un rival -3. 30hp c/u, tienen un esquivar de 25. Usarlas para un comando es una acción gratuita x TC",
+    rareza: "A",
+    costo: 2800,
+    precio:16000
+  },
+  {
+    nombre: "Elektrodive",
+    tipo: cyberItem,
+    descripcion: "",
+    efecto: "Par de guantes eléctricos con 4 cargas, Daño +2d8. Al declarar PELEA puede decidir usar una de estas cargas, si golpea al objetivo lo deja en Desventaja por (30-res amb) cada 3/1TC. 1TL solar da una carga",
+    rareza: "A",
+    costo: 2800,
+    precio:19000
+  },
+  {
+    nombre: "Falcon Mk7",
+    tipo: cyberItem,
+    descripcion: "",
+    efecto: "Ave robótica que ayuda a analizar terrenos. Supervivencia +3. 1 TL de carga para usarla 2TL",
+    rareza: "C",
+    costo: 2800,
+    precio:9000
+  },
+  {
+    nombre: "Mochila sonica",
+    tipo: cyberItem,
+    descripcion: "",
+    efecto: "Al encenderla emite onda sonoras que perturban a todos rn 10m. Tiran res amb vs 50, cada 5 de diferencia -1 en todo. Duración 2d6 Tc. 1TL carga solar",
+    rareza: "B",
+    costo: 2800,
+    precio:14000
+  },
+  {
+    nombre: "Shuriken Cierra",
+    tipo: cyberItem,
+    descripcion: "",
+    efecto: "Shuriken gigante que se LANZA -3, si golpea hace el daño de Lanzar +3D6, los D6 impares se suman y se vuelven a tirar hasta que no salgan más.",
+    rareza: "B",
+    costo: 2800,
+    precio:20000
+  },
+  {
+    nombre: "Flechas de Neon",
+    tipo: cyberItem,
+    descripcion: "",
+    efecto: "Pack de 4 flechas que ignoran armaduras físicas. Si el usuario tiene `Chip arma inteligente` con una acción rápida puede recuperar 1D4 de estas flechas",
+    rareza: "C",
+    costo: 2800,
+    precio:9000
   },
   {
     nombre: "Armor sónica Brazo Derecho",
@@ -2169,6 +2511,7 @@ export const vehiculos = [{
   nombre:"Cuadrúpedo Ligero",
   precio:randomNumber(20000,33000)
 },
+
 {
   nombre:"Pesados y Especiales",
   precio:randomNumber(25000,55000)
