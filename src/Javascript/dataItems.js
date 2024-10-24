@@ -2886,415 +2886,415 @@ const oparts = [{
   precio: 12000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Sobrecarga",
+  precio: 7500
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Cool Ball",
+  precio: 7000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Race",
+  precio: 8000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Zero Shiki",
+  precio: 8000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Shin Zero",
+  precio: 6000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Mamakari Sword",
+  precio: 6000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Hilos apresogods",
+  precio: 8000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Espejo flotante",
+  precio: 7500
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Wise & Yuri",
+  precio: 10000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Alma de templario",
+  precio: 9000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Gema Ruby",
+  precio: 9000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Gema Zafiro",
+  precio: 9000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Tridente de Siegfried",
+  precio: 10000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "La enciclopedia del",
+  precio: 15000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Amplificador Astral",
+  precio: 9000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Soft Ball",
+  precio: 11000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Radaer",
+  precio: 7000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Control oscuridad",
+  precio: 7000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Lobo de energía",
+  precio: 6000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Toro de energía",
+  precio: 6000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Oso de energía",
+  precio: 6000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Serpiente de energia",
+  precio: 6000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Telepatía",
+  precio: 9000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Intimidación",
+  precio: 9000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Control de Stamina",
+  precio: 8000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Hablar con espiritus",
+  precio: 9000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Deflectar el daño",
+  precio: 5000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Invocar Minions",
+  precio: 5000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Reducción Enfermedad",
+  precio: 5500
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "L'Cie",
+  precio: 7000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Dagas voladoras",
+  precio: 5000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Hacha de Baldy",
+  precio: 5000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Shuri",
+  precio: 5000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Phantom Pain",
+  precio: 5000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Gem Ball",
+  precio: 4500
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Holy necklace",
+  precio: 6000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Gema Amatista",
+  precio: 5000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Cuchillas giratorias",
+  precio: 6000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "El escarabajo azul",
+  precio: 5000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Barrier",
+  precio: 6000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Identificar O-part",
+  precio: 8000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Little punch",
+  precio: 7500
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Ballesta de energía",
+  precio: 9000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Daga energía",
+  precio: 5000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Daga elemental",
+  precio: 5000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Descifrar Tecnología",
+  precio: 6000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Mas MP + Daño",
+  precio: 4000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Escudo",
+  precio: 4000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Ira canalizada",
+  precio: 4000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Extraer O-Part",
+  precio: 6000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Control Sonido",
+  precio: 2000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Aumento Fortaleza",
+  precio: 3000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Aumento Destreza",
+  precio: 4000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Aumento Percepción",
+  precio: 3000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Aumento Voluntad",
+  precio: 3500
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Control luz",
+  precio: 1800
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Alas energía",
+  precio: 1500
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Crear Alimentos",
+  precio: 3000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Esposas de energía",
+  precio: 2500
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Extremidades filosas",
+  precio: 3000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Radar mágico",
+  precio: 4000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Aumento Fuerza",
+  precio: 2500
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Aumento Resistencia",
+  precio: 2500
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Aumento Lanzar",
+  precio: 2000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Aumento Arma distancia",
+  precio: 2000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Aumento Arma CC",
+  precio: 3000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Aumento Pelea",
+  precio: 2000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Tennyo",
+  precio: 2500
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Golpe de Fe",
+  precio: 4500
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Sunrise",
+  precio: 4000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Gema Perla",
+  precio: 3800
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Llave del aventurero",
+  precio: 9000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Control mental",
+  precio: 36000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Rifle elemental",
+  precio: 31000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Rifle energía",
+  precio: 31000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Martillo elemental",
+  precio: 31000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Martillo energía",
+  precio: 31000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Absorción de energia",
+  precio: 31000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Necromancer",
+  precio: 37000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Mas XP",
+  precio: 39000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Bazooka de energía",
+  precio: 39000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Refleja Daño",
+  precio: 35000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Item Excellent",
+  precio: 33000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Eteriedad",
+  precio: 40000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Copia SIN",
+  precio: 36000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Centro de explosión",
+  precio: 27000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Benri Dama",
+  precio: 33000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "HATE",
+  precio: 30000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Holo Shield",
+  precio: 35000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Látigo Anaak",
+  precio: 27000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Maru Hakkō Kage",
+  precio: 32000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Destructor de afinidad",
+  precio: 35000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Cuerpo de Golem",
+  precio: 32000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Los 4 Brazos del Jahad",
+  precio: 37000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Tiento a los cabellos enredados",
+  precio: 35000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Brazos Legendarys",
+  precio: 40000
 },{
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Piernas Legendarys",
+  precio: 40000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Pecho completo Legendarys",
+  precio: 40000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Casco Legendarys",
+  precio: 40000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Anulador",
+  precio: 24000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Garra Dimensional",
+  precio: 45000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Dream Healer",
+  precio: 43000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Brújula de Jack",
+  precio: 33000
 },
 {
   descripcion: "Control agua",
