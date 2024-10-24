@@ -2589,6 +2589,729 @@ export const baseProducts = [{
   precio:1200
 }];
 
+const oparts = [{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control fuego",
+  precio: 20000
+},
+{
+  descripcion: "Control tierra",
+  precio: 19000
+},
+{
+  descripcion: "Control electric",
+  precio: 20000
+},
+{
+  descripcion: "Control aire",
+  precio: 22000
+},
+{
+  descripcion: "Control humano",
+  precio: 21000
+},
+{
+  descripcion: "Aumento Manipulacion",
+  precio: 18000
+},
+{
+  descripcion: "Pistola Elemental",
+  precio: 19000
+},
+{
+  descripcion: "Pistola Energia",
+  precio: 18000
+},
+{
+  descripcion: "Arco Elemental",
+  precio: 20000
+},
+{
+  descripcion: "Arco energía",
+  precio: 20000
+},
+{
+  descripcion: "Ácido",
+  precio: 22000
+},
+{
+  descripcion: "Control de Gravedad",
+  precio: 25000
+},
+{
+  descripcion: "Predicción",
+  precio: 20000
+},
+{
+  descripcion: "Duplicar objeto",
+  precio: 22000
+},
+{
+  descripcion: "Ver el pasado",
+  precio: 22000
+},
+{
+  descripcion: "Telekinesis",
+  precio: 23000
+},
+{
+  descripcion: "Explosión",
+  precio: 22000
+},
+{
+  descripcion: "Cura",
+  precio: 23000
+},
+{
+  descripcion: "Random O-Part",
+  precio: 22000
+},
+{
+  descripcion: "Humo negro",
+  precio: 22000
+},
+{
+  descripcion: "Roba habilidad",
+  precio: 31000
+},
+{
+  descripcion: "Anular O-Part",
+  precio: 25000
+},
+{
+  descripcion: "Deception",
+  precio: 30000
+},
+{
+  descripcion: "John Doe",
+  precio: 27000
+},
+{
+  descripcion: "Agujas Energía",
+  precio: 25000
+},
+{
+  descripcion: "Random Magic",
+  precio: 32000
+},
+{
+  descripcion: "Ace's deck",
+  precio: 25000
+},
+{
+  descripcion: "Orphan",
+  precio: 29000
+},
+{
+  descripcion: "Messiah ",
+  precio: 29000
+},
+{
+  descripcion: "Mekisis",
+  precio: 19000
+},
+{
+  descripcion: "Esper Titan",
+  precio: 26000
+},
+{
+  descripcion: "Esper Kodama",
+  precio: 23000
+},
+{
+  descripcion: "Kyori",
+  precio: 22000
+},
+{
+  descripcion: "Pessadilla",
+  precio: 21000
+},
+{
+  descripcion: "Control del espacial",
+  precio: 24000
+},
+{
+  descripcion: "Contrato",
+  precio: 15000
+},
+{
+  descripcion: "Espada de Zack",
+  precio: 22000
+},
+{
+  descripcion: "Ojo de Robin",
+  precio: 20000
+},
+{
+  descripcion: "I-Droid",
+  precio: 18000
+},
+{
+  descripcion: "Mochila vengativa",
+  precio: 20000
+},
+{
+  descripcion: "Daga sangrienta",
+  precio: 23000
+},
+{
+  descripcion: "Espada sangrienta",
+  precio: 25000
+},
+{
+  descripcion: "Hacha Sangrienta",
+  precio: 27000
+},
+{
+  descripcion: "Brazos de Golem",
+  precio: 28000
+},
+{
+  descripcion: "Serrucho astral",
+  precio: 22000
+},
+{
+  descripcion: "Saeta de las venas",
+  precio: 22000
+},
+{
+  descripcion: "Graiya",
+  precio: 25000
+},
+{
+  descripcion: "Hacha energía",
+  precio: 8500
+},
+{
+  descripcion: "Aumento de Afin",
+  precio: 10000
+},
+{
+  descripcion: "Analizador",
+  precio: 22000
+},
+{
+  descripcion: "Light Drifter",
+  precio: 27000
+},
+{
+  descripcion: "Hyper Gun",
+  precio: 27000
+},
+{
+  descripcion: "Control plantas",
+  precio: 8000
+},
+{
+  descripcion: "Control animal",
+  precio: 9000
+},
+{
+  descripcion: "Aumento Carisma",
+  precio: 9000
+},
+{
+  descripcion: "Aumento Voluntad",
+  precio: 9000
+},
+{
+  descripcion: "Super Percepcion",
+  precio: 11000
+},
+{
+  descripcion: "Aumento Inteligencia",
+  precio: 11000
+},
+{
+  descripcion: "Aumento Astucia",
+  precio: 11000
+},
+{
+  descripcion: "Espada elemental",
+  precio: 8500
+},
+{
+  descripcion: "Espada energía",
+  precio: 8500
+},
+{
+  descripcion: "Control clima",
+  precio: 10000
+},
+{
+  descripcion: "O'dolly",
+  precio: 9000
+},
+{
+  descripcion: "Brazos extra",
+  precio: 10000
+},
+{
+  descripcion: "Ilusión",
+  precio: 9000
+},
+{
+  descripcion: "Generador de amor",
+  precio: 8000
+},
+{
+  descripcion: "Molly power",
+  precio: 8500
+},
+{
+  descripcion: "Copia habilidad",
+  precio: 10000
+},
+{
+  descripcion: "Sombra",
+  precio: 9000
+},
+{
+  descripcion: "Crear Portales",
+  precio: 10000
+},
+{
+  descripcion: "Agujas Hielo",
+  precio: 8000
+},
+{
+  descripcion: "Random Power",
+  precio: 29000
+},
+{
+  descripcion: "Esper Mal de ojo",
+  precio: 12000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+{
+  descripcion: "Control agua",
+  precio: 18000
+},
+
+
+]
+
 
 export function randomNumber(min,max){
   const randomNumber = Math.floor(Math.random()*(max - min + 1)) + min;
