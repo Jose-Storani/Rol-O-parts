@@ -9,6 +9,7 @@ import {
     kundums,
     randomNumber,
     efectosMagicos,
+    opartsListadas
 
 } from "./dataItems.js";
 
@@ -86,10 +87,7 @@ function selectItemType() {
         case 12:
         case 13:
         case 14:
-            item = {
-                nombre: `Opart ${randomNumber(1,220)}`,
-            };
-
+            item = randomItem(opartsListadas);
             break;
         case 15:
         case 16:

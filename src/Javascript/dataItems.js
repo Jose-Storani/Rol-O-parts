@@ -3435,6 +3435,11 @@ const oparts = [{
 
 ]
 
+export const opartsListadas = oparts.map((obj, index) => ({
+  ...obj,
+  numero: index + 1,
+  nombre: "O-Part"
+}))
 
 export function randomNumber(min,max){
   const randomNumber = Math.floor(Math.random()*(max - min + 1)) + min;
