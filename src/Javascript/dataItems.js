@@ -2614,7 +2614,7 @@ const oparts = [{
   precio: 21000
 },
 {
-  descripcion: "Aumento Manipulacion",
+  descripcion: "Aumento Manipulacion +",
   precio: 18000
 },
 {
@@ -2726,7 +2726,7 @@ const oparts = [{
   precio: 22000
 },
 {
-  descripcion: "Pessadilla",
+  descripcion: "Pesadilla",
   precio: 21000
 },
 {
@@ -2814,7 +2814,7 @@ const oparts = [{
   precio: 9000
 },
 {
-  descripcion: "Aumento Voluntad",
+  descripcion: "Aumento Voluntad +",
   precio: 9000
 },
 {
@@ -3297,17 +3297,140 @@ const oparts = [{
   precio: 33000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Control maná",
+  precio: 40000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Super fuerza",
+  precio: 42000
 },
 {
-  descripcion: "Control agua",
-  precio: 18000
+  descripcion: "Super Resistencia",
+  precio: 42000
 },
+{
+  descripcion: "Lanza elemental",
+  precio: 40000
+},
+{
+  descripcion: "Lanza energía",
+  precio: 40000
+},
+{
+  descripcion: "Suerte",
+  precio: 35000
+},
+{
+  descripcion: "Invisible",
+  precio: 48000
+},
+{
+  descripcion: "Control del Tiempo",
+  precio: 37000
+},
+{
+  descripcion: "Regeneración",
+  precio: 42000
+},
+{
+  descripcion: "Kaioken",
+  precio: 33000
+},
+{
+  descripcion: "Daño Success",
+  precio: 30000
+},
+{
+  descripcion: "El Olvido",
+  precio: 38000
+},
+{
+  descripcion: "Oversoul",
+  precio: 31000
+},
+{
+  descripcion: "Titan Brazo Izquierdo",
+  precio: 30000
+},
+{
+  descripcion: "Titan Brazo Derecho",
+  precio: 30000
+},
+{
+  descripcion: "Titan Pierna Izquiera",
+  precio: 30000
+},
+{
+  descripcion: "Titan Pierna Derecha",
+  precio: 30000
+},
+{
+  descripcion: "Titan Torso y cabeza",
+  precio: 30000
+},
+{
+  descripcion: "Espada de Jin",
+  precio: 43000
+},
+{
+  descripcion: "Room",
+  precio: 45000
+},
+{
+  descripcion: "Garaiya",
+  precio: 40000
+},
+{
+  descripcion: "Esper HoloLich",
+  precio: 38000
+},
+{
+  descripcion: "Esper Bahamut",
+  precio: 42000
+},
+{
+  descripcion: "Collar de Noell",
+  precio: 40000
+},
+{
+  descripcion: "Gema Rose Quartz",
+  precio: 35000
+},{
+  descripcion: "El compendio",
+  precio: 42000
+},
+{
+  descripcion: "Angustia, Dolor y Penitencia",
+  precio: 40000
+},
+{
+  descripcion: "Daño Success",
+  precio: 39000
+},
+{
+  descripcion: "Puppeteer",
+  precio: 45000
+},
+{
+  descripcion: "Expansión de dominio",
+  precio: 46000
+},
+{
+  descripcion: "Counter Físico",
+  precio: 49000
+},
+{
+  descripcion: "Counter Mágico",
+  precio: 52000
+},
+{
+  descripcion: "Counter Afin",
+  precio: 52000
+},
+{
+  descripcion: "Leer Mentes",
+  precio: 47000
+}
 
 
 ]
