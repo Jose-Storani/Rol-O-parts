@@ -9,7 +9,8 @@ import {
     kundums,
     randomNumber,
     efectosMagicos,
-    opartsListadas
+    opartsListadas,
+    municiones
 
 } from "./dataItems.js";
 
@@ -22,6 +23,9 @@ let shopTableBody = shopTable.querySelector("tbody");
 
 const shopBaseProducts = document.getElementById("shopTableBaseProducts")
 const shopBaseProductsBody = shopBaseProducts.querySelector("tbody");
+
+const shopMunicionesTable = document.getElementById("shopTableMuniciones");
+const shopMunicionesBody = shopMunicionesTable.querySelector("tbody");
 
 const weaponsTable = document.getElementById("weaponsTable");
 const weaponsTableBody = weaponsTable.querySelector("tbody")
@@ -284,11 +288,182 @@ function crearBaseProductPorClick(){
       return baseProductCopy;
 }
 
-function populateShopTable(arrayItems, arrayBaseProducts, arrayWeapons) {
+function crearArrayMuniciones(){
+    function municionEspecial(porcentajeProbabilidad){
+        if(randomNumber(1,10)<= porcentajeProbabilidad) return 1;
+        else return 0;
+    }
+let municiones = [{
+  nombre:"Municion Base x6 Pistolas Ligeras y Medias",
+  cantidad:randomNumber(2,10),
+  precio:600
+
+},{
+nombre:"Municion Antipersonal x4 ",
+descripcion:"Objetivos de carne +20%",
+  cantidad:municionEspecial(4),
+  precio:9600
+
+},
+{
+nombre:"Municion Neon x4 ",
+descripcion: "Ignora armaduras convencionales",
+  cantidad:municionEspecial(4),
+  precio:11200
+
+},{
+nombre:"Municion de Fase x4 ",
+descripcion: "Congela la localización aplicando negativos",
+descripcion: "Ignora armaduras mágicas",
+  cantidad:municionEspecial(1),
+  precio:16000
+
+},{
+nombre:"Municion Criogenica x4 ",
+descripcion: "Congela la localización aplicando negativos",
+  cantidad:municionEspecial(3),
+  precio:12800
+
+},{
+nombre:"Municion Debilitadora x4 ",
+descripcion: "La localización afectada tiene -30% de RES",
+  cantidad:municionEspecial(3),
+  precio:19200
+
+},{
+nombre:"Municion Explosiva x4 ",
+descripcion:"Una localización adyacente recibe 2D4 sin RES",
+  cantidad:municionEspecial(2),
+  precio:19200
+
+},{
+nombre:"Municion Radioactiva x4 ",
+descripcion: "La localización sufre +1D4/TC",
+  cantidad:municionEspecial(2),
+  precio:11200
+
+},
+
+{
+
+  nombre:"Municion Base x8 Pistolas Pesadas y Shotgun",
+  cantidad:randomNumber(2,8),
+  precio:2000
+
+
+},
+
+{
+nombre:"Municion Antipersonal x4 ",
+descripcion:"Objetivos de carne +20%",
+  cantidad:municionEspecial(4),
+  precio:11520
+
+},
+{
+nombre:"Municion Neon x4 ",
+descripcion: "Ignora armaduras convencionales",
+  cantidad:municionEspecial(4),
+  precio:13440
+
+},{
+nombre:"Municion de Fase x4 ",
+descripcion: "Ignora armaduras mágicas",
+  cantidad:municionEspecial(1),
+  precio:19200
+
+},{
+nombre:"Municion Criogenica x4 ",
+descripcion: "Congela la localización aplicando negativos",
+  cantidad:municionEspecial(3),
+  precio:15360
+
+},{
+nombre:"Municion Debilitadora x4 ",
+descripcion: "La localización afectada tiene -30% de RES",
+  cantidad:municionEspecial(3),
+  precio:23040
+
+},{
+nombre:"Municion Explosiva x4 ",
+descripcion:"Una localización adyacente recibe 2D4 sin RES",
+  cantidad:municionEspecial(2),
+  precio:23040
+
+},{
+nombre:"Municion Radioactiva x4 ",
+descripcion: "La localización sufre +1D4/TC",
+  cantidad:municionEspecial(2),
+  precio:13440
+
+},
+
+{
+
+  nombre:"Municion Base x25 Sniper y Ametralladoras",
+  cantidad:randomNumber(2,3),
+  precio:3500
+
+},
+{
+nombre:"Municion Antipersonal x4 ",
+descripcion:"Objetivos de carne +20%",
+  cantidad:municionEspecial(4),
+  precio:16128
+
+},
+{
+nombre:"Municion Neon x4 ",
+descripcion: "Ignora armaduras convencionales",
+  cantidad:municionEspecial(4),
+  precio:18816
+
+},{
+nombre:"Municion de Fase x4 ",
+descripcion: "Ignora armaduras mágicas",
+  cantidad:municionEspecial(1),
+  precio:26880
+
+},{
+nombre:"Municion Criogenica x4 ",
+descripcion: "Congela la localización aplicando negativos",
+  cantidad:municionEspecial(3),
+  precio:21504
+
+},{
+nombre:"Municion Debilitadora x4 ",
+descripcion: "La localización afectada tiene -30% de RES",
+  cantidad:municionEspecial(3),
+  precio:32256
+
+},{
+nombre:"Municion Explosiva x4 ",
+descripcion:"Una localización adyacente recibe 2D4 sin RES",
+  cantidad:municionEspecial(2),
+  precio:32256
+
+},{
+nombre:"Municion Radioactiva x4 ",
+descripcion: "La localización sufre +1D4/TC",
+  cantidad:municionEspecial(2),
+  precio:18816
+
+}
+
+]
+
+let municionesConStock = municiones.filter(item => item.cantidad > 0);
+return municionesConStock;
+}
+
+
+
+function populateShopTable(arrayItems, arrayBaseProducts, arrayWeapons,arrayMunitions) {
 
     shopTableBody.innerHTML = "";
     shopBaseProductsBody.innerHTML = "";
     weaponsTableBody.innerHTML = "";
+    shopMunicionesBody.innerHTML = "";
 
     let arrayItemsCopy = JSON.parse(JSON.stringify(arrayItems));
     
@@ -337,12 +512,15 @@ function populateShopTable(arrayItems, arrayBaseProducts, arrayWeapons) {
     });
 
     arrayBaseProducts.forEach((item) => {
-        if (item.cantidad === 0) {
-            return;
-        }
+        
         
         item.precio = Math.round(item.precio * locationPrice);
         item.cantidad = Math.floor(item.cantidad * locationQuantity);
+        if (item.cantidad == 0) {
+            return;
+        }
+
+
 
         
 
@@ -362,6 +540,34 @@ function populateShopTable(arrayItems, arrayBaseProducts, arrayWeapons) {
         row.appendChild(priceCell)
 
         shopBaseProductsBody.appendChild(row)
+
+    });
+
+    arrayMunitions.forEach((item) => {
+        item.precio = Math.round(item.precio * locationPrice);
+       // item.cantidad = Math.floor(item.cantidad * locationQuantity);
+
+        //por el momento las municiones no se veran afectadas por locacion. A revisar mas tarde
+
+
+
+        const row = document.createElement("tr");
+        const nameCell = document.createElement("td");
+        const descriptionCell = document.createElement("td");
+        const cantCell = document.createElement("td")
+        const priceCell = document.createElement("td");
+
+        nameCell.textContent = item.nombre;
+        descriptionCell.textContent = item.descripcion;
+        cantCell.textContent = item.cantidad;
+        priceCell.textContent = item.precio;
+
+        row.appendChild(nameCell)
+        row.appendChild(descriptionCell)
+        row.appendChild(cantCell)
+        row.appendChild(priceCell)
+
+        shopMunicionesBody.appendChild(row)
 
     });
 
@@ -426,11 +632,11 @@ let showItemsTable = (tabla) => {
 }
 const generateShopButton = document.getElementById("shopButton");
 generateShopButton.addEventListener("click", () => {
-    populateShopTable(generateArray(20, selectItemType),crearBaseProductPorClick(), generateArray(5, selectWeapon));
+    populateShopTable(generateArray(20, selectItemType),crearBaseProductPorClick(), generateArray(5, selectWeapon),crearArrayMuniciones());
     showItemsTable(shopTable)
     showItemsTable(shopBaseProducts)
     showItemsTable(weaponsTable)
-
+showItemsTable(shopMunicionesTable)
 });
 
 

@@ -2589,6 +2589,27 @@ export const baseProducts = [{
   precio:1200
 }];
 
+export const municiones = [{
+  nombre:"Municion Base x6 Pistolas Ligeras y Media",
+  cantidad:randomNumber(2,10),
+  precio:70
+
+},{
+
+  nombre:"Municion Base x8 Pistolas Pesadas y Shotgun",
+  cantidad:randomNumber(2,8),
+  precio:70
+
+
+},{
+
+  nombre:"Municion Base x25 Sniper y Ametralladoras",
+  cantidad:randomNumber(2,3),
+  precio:70
+
+}
+
+]
 const oparts = [{
   descripcion: "Control agua",
   precio: 18000
